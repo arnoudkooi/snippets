@@ -1,0 +1,2021 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2021-09-20 13:36:18">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Search through your dashboard  to easy find your widgets
+Provided by Logicalis SMC Arnoud Kooi</description>
+<inserted/>
+<name>PA Dashboard Search</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>50de2b12db1ff2008eab5cd4dc961948</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:16</sys_created_on>
+<sys_id>5013ec981bbaf4d0ba6a437cbc4bcbbd</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:16</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_field_74e278c837336e0083f542f643990e42</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table_field"><sys_db_view_table_field action="INSERT_OR_UPDATE"><field>order</field><sys_class_name>sys_db_view_table_field</sys_class_name><sys_created_by>C36842_SHARE</sys_created_by><sys_created_on>2016-12-14 23:29:29</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>74e278c837336e0083f542f643990e42</sys_id><sys_mod_count>3</sys_mod_count><sys_name>order</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_view_table_field_74e278c837336e0083f542f643990e42</sys_update_name><sys_updated_by>C36842_SHARE</sys_updated_by><sys_updated_on>2016-12-14 23:30:35</sys_updated_on><table>pa_dashboards_group</table><view_table display_value="pa_dashboards_group">5f42388837336e0083f542f643990e9d</view_table></sys_db_view_table_field></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>201320d81bbaf4d0ba6a437cbc4bcbb0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>pa_dashboards_group</table>
+<target_name>order</target_name>
+<type>View Field</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_field_f02fec4837336e0083f542f643990e91</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table_field"><sys_db_view_table_field action="INSERT_OR_UPDATE"><field>portal_section</field><sys_class_name>sys_db_view_table_field</sys_class_name><sys_created_by>C36842_SHARE</sys_created_by><sys_created_on>2016-12-14 23:13:21</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>f02fec4837336e0083f542f643990e91</sys_id><sys_mod_count>0</sys_mod_count><sys_name>portal_section</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_view_table_field_f02fec4837336e0083f542f643990e91</sys_update_name><sys_updated_by>C36842_SHARE</sys_updated_by><sys_updated_on>2016-12-14 23:13:21</sys_updated_on><table>sys_portal_preferences</table><view_table display_value="sys_portal_preferences">554cce604f54d60074570ab18110c76c</view_table></sys_db_view_table_field></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>201320d81bbaf4d0ba6a437cbc4bcbb3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>sys_portal_preferences</table>
+<target_name>portal_section</target_name>
+<type>View Field</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_5f42388837336e0083f542f643990e9d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table"><sys_db_view_table action="INSERT_OR_UPDATE"><active>true</active><left_join>true</left_join><order>150</order><sys_class_name>sys_db_view_table</sys_class_name><sys_created_by>C36842_SHARE</sys_created_by><sys_created_on>2016-12-14 23:27:50</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>5f42388837336e0083f542f643990e9d</sys_id><sys_mod_count>3</sys_mod_count><sys_name>pa_dashboards_group</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_view_table_5f42388837336e0083f542f643990e9d</sys_update_name><sys_updated_by>C36842_SHARE</sys_updated_by><sys_updated_on>2016-12-17 22:41:15</sys_updated_on><table>pa_dashboards_group</table><variable_prefix>dg</variable_prefix><view display_value="u_pa_widget_to_dashboard">b37b46604f54d60074570ab18110c756</view><where_clause>d_group = dg_sys_id</where_clause></sys_db_view_table></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>2013ec981bbaf4d0ba6a437cbc4bcbbf</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>pa_dashboards_group</table>
+<target_name>pa_dashboards_group</target_name>
+<type>View Table</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_field_367a73c24f105a0074570ab18110c76e</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_db_view_table_field action="INSERT_OR_UPDATE">
+<field>order</field>
+<sys_class_name>sys_db_view_table_field</sys_class_name>
+<sys_created_by>Arnoud.Kooi_SHARE</sys_created_by>
+<sys_created_on>2015-12-14 23:18:36</sys_created_on>
+<sys_customer_update>true</sys_customer_update>
+<sys_id>367a73c24f105a0074570ab18110c76e</sys_id>
+<sys_mod_count>1</sys_mod_count>
+<sys_name>order</sys_name>
+<sys_package display_value="Global">global</sys_package>
+<sys_policy/>
+<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sys_db_view_table_field_367a73c24f105a0074570ab18110c76e</sys_update_name>
+<sys_updated_by>Arnoud.Kooi_SHARE</sys_updated_by>
+<sys_updated_on>2015-12-15 22:10:34</sys_updated_on>
+<table>pa_m2m_dashboard_tabs</table>
+<view_table display_value="pa_m2m_dashboard_tabs">46cf26bc4f58d60074570ab18110c73c</view_table>
+</sys_db_view_table_field></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>2013ec981bbaf4d0ba6a437cbc4bcbc2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>pa_m2m_dashboard_tabs</table>
+<target_name>order</target_name>
+<type>View Field</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_field_c1317abc4f58d60074570ab18110c7f3</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_db_view_table_field action="INSERT_OR_UPDATE">
+<field>dashboard</field>
+<sys_class_name>sys_db_view_table_field</sys_class_name>
+<sys_created_by>Arnoud.Kooi_SHARE</sys_created_by>
+<sys_created_on>2015-12-10 20:45:44</sys_created_on>
+<sys_customer_update>true</sys_customer_update>
+<sys_id>c1317abc4f58d60074570ab18110c7f3</sys_id>
+<sys_mod_count>1</sys_mod_count>
+<sys_name>dashboard</sys_name>
+<sys_package display_value="Global">global</sys_package>
+<sys_policy/>
+<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sys_db_view_table_field_c1317abc4f58d60074570ab18110c7f3</sys_update_name>
+<sys_updated_by>Arnoud.Kooi_SHARE</sys_updated_by>
+<sys_updated_on>2015-12-15 22:10:35</sys_updated_on>
+<table>pa_m2m_dashboard_tabs</table>
+<view_table display_value="pa_m2m_dashboard_tabs">46cf26bc4f58d60074570ab18110c73c</view_table>
+</sys_db_view_table_field></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>241320d81bbaf4d0ba6a437cbc4bcbb2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>pa_m2m_dashboard_tabs</table>
+<target_name>dashboard</target_name>
+<type>View Field</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_28cb8e604f54d60074570ab18110c7ab</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table"><sys_db_view_table action="INSERT_OR_UPDATE"><active>true</active><left_join>true</left_join><order>900</order><sys_class_name>sys_db_view_table</sys_class_name><sys_created_by>Arnoud.Kooi_SHARE</sys_created_by><sys_created_on>2015-12-09 23:24:12</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>28cb8e604f54d60074570ab18110c7ab</sys_id><sys_mod_count>8</sys_mod_count><sys_name>pa_widgets</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_view_table_28cb8e604f54d60074570ab18110c7ab</sys_update_name><sys_updated_by>C36842_SHARE</sys_updated_by><sys_updated_on>2016-12-15 21:50:44</sys_updated_on><table>pa_widgets</table><variable_prefix>w</variable_prefix><view display_value="u_pa_widget_to_dashboard">b37b46604f54d60074570ab18110c756</view><where_clause>ppr_name = 'sys_id' &amp;&amp; ppr_value = w_sys_id</where_clause></sys_db_view_table></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>2413ec981bbaf4d0ba6a437cbc4bcbbe</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>pa_widgets</table>
+<target_name>pa_widgets</target_name>
+<type>View Table</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_field_23bf2f91db376a00d19870d9bf96198f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table_field"><sys_db_view_table_field action="INSERT_OR_UPDATE"><field>indicator</field><sys_class_name>sys_db_view_table_field</sys_class_name><sys_created_by>C36842_SHARE</sys_created_by><sys_created_on>2016-12-19 10:26:59</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>23bf2f91db376a00d19870d9bf96198f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>indicator</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_view_table_field_23bf2f91db376a00d19870d9bf96198f</sys_update_name><sys_updated_by>C36842_SHARE</sys_updated_by><sys_updated_on>2016-12-19 10:26:59</sys_updated_on><table>pa_widgets</table><view_table display_value="pa_widgets">28cb8e604f54d60074570ab18110c7ab</view_table></sys_db_view_table_field></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>2413ec981bbaf4d0ba6a437cbc4bcbc1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>pa_widgets</table>
+<target_name>indicator</target_name>
+<type>View Field</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_field_a096a3924f145a0074570ab18110c782</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_db_view_table_field action="INSERT_OR_UPDATE">
+<field>visualization</field>
+<sys_class_name>sys_db_view_table_field</sys_class_name>
+<sys_created_by>Arnoud.Kooi_SHARE</sys_created_by>
+<sys_created_on>2015-12-15 16:30:23</sys_created_on>
+<sys_customer_update>true</sys_customer_update>
+<sys_id>a096a3924f145a0074570ab18110c782</sys_id>
+<sys_mod_count>1</sys_mod_count>
+<sys_name>visualization</sys_name>
+<sys_package display_value="Global">global</sys_package>
+<sys_policy/>
+<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sys_db_view_table_field_a096a3924f145a0074570ab18110c782</sys_update_name>
+<sys_updated_by>Arnoud.Kooi_SHARE</sys_updated_by>
+<sys_updated_on>2015-12-15 22:10:32</sys_updated_on>
+<table>pa_widgets</table>
+<view_table display_value="pa_widgets">28cb8e604f54d60074570ab18110c7ab</view_table>
+</sys_db_view_table_field></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>281320d81bbaf4d0ba6a437cbc4bcbb1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>pa_widgets</table>
+<target_name>visualization</target_name>
+<type>View Field</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_page_20602bb04fbb6a0074570ab18110c7b6</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_page"&gt;&lt;sys_ui_page action="INSERT_OR_UPDATE"&gt;&lt;category&gt;general&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[var app = angular.module('widgets', []);
+app.controller('MainCtrl', function($scope,$http) {
+
+  //URL to pass to the REST API, by using this API no serverside code is needed.
+	var myurl = '/api/now/table/u_pa_dashboard_to_widget' +  
+		'?sysparm_query=d_active=true^g_sys_idISNOTEMPTY^ORr_sys_idISNOTEMPTY^ORw_sys_idISNOTEMPTY%255E'+
+		'ORDERBYdg_order%5EORDERBYdg_name%5EORDERBYd_order%5EORDERBYd_name%5EORDERBYdt_order%5EORDERBYgcp_posx%5EORDERBYgcp_posy&amp;sysparm_display_value='+
+		'&amp;sysparm_exclude_reference_link=true&amp;sysparm_suppress_pagination_header=true&amp;'+
+		'sysparm_fields=dg_name,dg_order,dg_sys_id,d_name,d_order,d_sys_id,t_name,g_name,g_report,'+
+		'dt_sys_id,dt_order,t_sys_id,w_name,w_type,w_visualization,w_sys_id,r_title,r_sys_id,r_type';
+	
+	
+	$http.get(myurl, {
+		headers: {
+			'X-UserToken': g_ck,
+			'Cache-Control': 'no-cache',
+			'Accept': 'application/json',
+			'Content-Type': 'application/json'
+		}
+	}).success(function(data) {
+		$scope.jsond = data.result;
+		jsond = data.result; //add as global object for debugging
+	});
+	
+
+	$scope.getUrl = function (i){
+	return '/$pa_dashboard.do?dashboard=' + i.d_sys_id +
+		'&amp;tab='+ i.t_sys_id +
+		'&amp;breakdown_source=' + '' +
+		'&amp;header=true&amp;tabs=true';
+	};
+	
+	
+	$scope.previewWidget = function (r){
+		var url = '/sys_report_template.do?jvar_report_id=' + 
+			(r.r_sys_id || r.g_report) ;
+		if (r.w_sys_id)
+			url = '/$pa_widget.do?jvar_sys_id=' + r.w_sys_id + '&amp;jvar_widget_type=' + r.w_type;
+
+		$j('#ifrWidget').attr('src', url);
+		$j('#widgetModal').modal('show');
+	};
+	
+});
+
+
+
+app.filter('multipleTags', function($filter) {
+  return function multipleTags(items, predicates) {
+    predicates = (predicates || '').split(' ');
+
+    angular.forEach(predicates, function(predicate) {
+      items = $filter('filter')(items, predicate.trim());
+    });
+    return items;
+  };
+});
+
+$j("input[type='text']").on("click", function () {
+   $j(this).select();
+});
+
+
+
+
+]]&gt;&lt;/client_script&gt;&lt;description&gt;Easely search and navigate to your PA Dashboards and preview your widgets.&amp;#13;
+Provided by Logicalis SMC / Arnoud Kooi&lt;/description&gt;&lt;direct&gt;false&lt;/direct&gt;&lt;endpoint/&gt;&lt;html&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null"&gt;
+
+	&lt;script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"&gt;&lt;/script&gt;
+
+	&lt;style&gt;
+		.table-borderless tbody tr td,
+		.table-borderless tbody tr th {
+			border: none;
+		}
+		
+		.showtd {
+		background-color:#F5F5F5 !important;
+		border-top: 1px solid #cccccc !important;
+		padding-bottom: -2px !important;
+
+		}
+		
+		.showwidget {
+		background-color:#F5F5F5 !important;
+		padding-bottom: -2px !important;
+
+		}
+
+		.hidetd a {
+		display:none;
+		
+		}
+		
+		.modal-dialog {
+		width: 95%; 
+		}
+		
+		.mybtn{
+		width:auto!important;
+		}
+
+	&lt;/style&gt;
+
+	&lt;div ng-app='widgets' ng-cloak=''&gt;
+	&lt;div id="tree" ng-controller="MainCtrl"&gt;
+		
+	&lt;div class="input-group"&gt;
+      &lt;input type="text" class="form-control" 
+			 placeholder="Start typing to search your widgets and reports"
+			 ng-model='filterjsn' aria-label="Dashboard searcher" autofocus='' /&gt;
+      &lt;span class="input-group-btn"&gt;
+        &lt;button class="btn btn-default mybtn" type="button"&gt;Search ({{jsondf.length}})&lt;/button&gt;
+      &lt;/span&gt;
+    &lt;/div&gt;		
+	
+
+	 &lt;table class="table table-borderless" &gt;
+		 &lt;thead&gt;
+			 &lt;tr &gt;
+				 &lt;th class="col-md-2"&gt;Group&lt;/th&gt;
+				 &lt;th class="col-md-2"&gt;Dashboard&lt;/th&gt;
+				 &lt;th class="col-md-2"&gt;Tab&lt;/th&gt;
+				 &lt;th class="col-md-6"&gt;Widget&lt;/th&gt;
+			 &lt;/tr&gt;
+		&lt;/thead&gt;
+		&lt;tbody&gt;
+			&lt;tr ng-repeat="r in (jsondf = (jsond | multipleTags:  filterjsn))" &gt;
+				&lt;td class="col-md-2" 
+					ng-class="(jsondf[$index - 1]['dg_name'] != r.dg_name) ? 'showtd' : 'hidetd'" &gt;
+					&lt;a ng-href="{{getUrl(r)}}"&gt;{{r.dg_name}}&lt;/a&gt;
+				&lt;/td&gt;
+				&lt;td class="col-md-2" 
+					ng-class="(jsondf[$index - 1]['d_sys_id'] != r.d_sys_id) ? 'showtd' : 'hidetd'"&gt;
+					&lt;a ng-href="{{getUrl(r)}}"&gt;{{r.d_name}}&lt;/a&gt;
+				&lt;/td&gt;
+				&lt;td class="col-md-2" 
+					ng-class="(jsondf[$index - 1]['dt_sys_id'] != r.dt_sys_id) ? 'showtd' : 'hidetd'"&gt;
+					&lt;a ng-href="{{getUrl(r)}}"&gt;{{r.t_name}}&lt;/a&gt;
+				&lt;/td&gt;
+				&lt;td class="col-md-6" ng-title="{{r.w_type}} {{r.w_visualization}} {{r.r_type}}"
+					ng-class="(jsondf[$index - 1]['t_sys_id'] != r.t_sys_id) ? 'showtd' : 'showwidget'"
+					ng-attr-title="{{r.w_type}} {{r.w_visualization}} {{r.r_type}}"&gt;
+					&lt;a href='#' ng-click='previewWidget(r)' &gt;{{ r.w_name }}{{ r.r_title }}{{ r.g_name }}&lt;/a&gt;
+				&lt;/td&gt;
+			&lt;/tr&gt;
+		 &lt;/tbody&gt;
+	&lt;/table&gt;
+
+	&lt;/div&gt;
+	&lt;/div&gt;
+	
+	
+	
+	
+	&lt;!-- Modal --&gt;
+&lt;div id="widgetModal" class="modal fade" role="dialog"&gt;
+  &lt;div class="modal-dialog"&gt;
+
+    &lt;!-- Modal content--&gt;
+    &lt;div class="modal-content"&gt;
+      &lt;div class="modal-header"&gt;
+        &lt;button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal" style="border: 0px;
+"&gt;&lt;/button&gt;
+        &lt;h3 id="widgetName" class="modal-title"&gt;Preview&lt;/h3&gt;
+      &lt;/div&gt;
+      &lt;div class="modal-body"&gt;
+		  &lt;iframe id='ifrWidget' style="height: 450px; border: none; width:100%"  frameBorder="0" &gt;&lt;/iframe&gt;
+      &lt;/div&gt;
+
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+	
+&lt;/j:jelly&gt;]]&gt;&lt;/html&gt;&lt;name&gt;pa_widget_search&lt;/name&gt;&lt;processing_script&gt;&lt;![CDATA[	
+]]&gt;&lt;/processing_script&gt;&lt;sys_class_name&gt;sys_ui_page&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Arnoud.Kooi_SHARE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-12-17 20:03:35&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;20602bb04fbb6a0074570ab18110c7b6&lt;/sys_id&gt;&lt;sys_mod_count&gt;112&lt;/sys_mod_count&gt;&lt;sys_name&gt;pa_widget_search&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_page_20602bb04fbb6a0074570ab18110c7b6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin_SHARE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-01-03 18:19:31&lt;/sys_updated_on&gt;&lt;/sys_ui_page&gt;&lt;/record_update&gt;</payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>281320d81bbaf4d0ba6a437cbc4bcbb4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table/>
+<target_name>pa_widget_search</target_name>
+<type>UI Page</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_field_0adb2e3c4f58d60074570ab18110c7be</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_db_view_table_field action="INSERT_OR_UPDATE">
+<field>sys_id</field>
+<sys_class_name>sys_db_view_table_field</sys_class_name>
+<sys_created_by>Arnoud.Kooi_SHARE</sys_created_by>
+<sys_created_on>2015-12-10 20:22:27</sys_created_on>
+<sys_customer_update>true</sys_customer_update>
+<sys_id>0adb2e3c4f58d60074570ab18110c7be</sys_id>
+<sys_mod_count>1</sys_mod_count>
+<sys_name>sys_id</sys_name>
+<sys_package display_value="Global">global</sys_package>
+<sys_policy/>
+<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sys_db_view_table_field_0adb2e3c4f58d60074570ab18110c7be</sys_update_name>
+<sys_updated_by>Arnoud.Kooi_SHARE</sys_updated_by>
+<sys_updated_on>2015-12-15 22:10:36</sys_updated_on>
+<table>sys_portal_page</table>
+<view_table display_value="sys_portal_page">d6f9a23c4f58d60074570ab18110c700</view_table>
+</sys_db_view_table_field></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>2813ec981bbaf4d0ba6a437cbc4bcbc0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>sys_portal_page</table>
+<target_name>sys_id</target_name>
+<type>View Field</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_field_73ba579e4fd05a0074570ab18110c7ec</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_db_view_table_field action="INSERT_OR_UPDATE">
+<field>is_breakdown</field>
+<sys_class_name>sys_db_view_table_field</sys_class_name>
+<sys_created_by>Arnoud.Kooi_SHARE</sys_created_by>
+<sys_created_on>2015-12-15 15:38:34</sys_created_on>
+<sys_customer_update>true</sys_customer_update>
+<sys_id>73ba579e4fd05a0074570ab18110c7ec</sys_id>
+<sys_mod_count>1</sys_mod_count>
+<sys_name>is_breakdown</sys_name>
+<sys_package display_value="Global">global</sys_package>
+<sys_policy/>
+<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sys_db_view_table_field_73ba579e4fd05a0074570ab18110c7ec</sys_update_name>
+<sys_updated_by>Arnoud.Kooi_SHARE</sys_updated_by>
+<sys_updated_on>2015-12-15 22:10:33</sys_updated_on>
+<table>pa_dashboards</table>
+<view_table display_value="pa_dashboards">c52076bc4f58d60074570ab18110c7a3</view_table>
+</sys_db_view_table_field></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>2813ec981bbaf4d0ba6a437cbc4bcbc3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>pa_dashboards</table>
+<target_name>is_breakdown</target_name>
+<type>View Field</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_field_92652994373b6e0083f542f643990e39</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table_field"><sys_db_view_table_field action="INSERT_OR_UPDATE"><field>type</field><sys_class_name>sys_db_view_table_field</sys_class_name><sys_created_by>C36842_SHARE</sys_created_by><sys_created_on>2016-12-15 21:49:02</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>92652994373b6e0083f542f643990e39</sys_id><sys_mod_count>0</sys_mod_count><sys_name>type</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_view_table_field_92652994373b6e0083f542f643990e39</sys_update_name><sys_updated_by>C36842_SHARE</sys_updated_by><sys_updated_on>2016-12-15 21:49:02</sys_updated_on><table>sys_report</table><view_table display_value="sys_report">7f452d54373b6e0083f542f643990e40</view_table></sys_db_view_table_field></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>2c1320d81bbaf4d0ba6a437cbc4bcbb0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>sys_report</table>
+<target_name>type</target_name>
+<type>View Field</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_sys_db_view_table_table</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="table" table="sys_db_view_table"><active>true</active><array>false</array><array_denormalized>false</array_denormalized><attributes>allow_public=true,base_start=true,no_views=true</attributes><audit>false</audit><calculation/><choice/><choice_field/><choice_table/><column_label>Table</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>true</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>table</element><element_reference>false</element_reference><foreign_database/><internal_type display_value="">table_name</internal_type><mandatory>true</mandatory><max_length>80</max_length><name>sys_db_view_table</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><sizeclass/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>system_SHARE</sys_created_by><sys_created_on>2011-10-16 16:52:33</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>5a8c8c50db13320059815665dc96197b</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Table</sys_name><sys_package display_value="Database Views" source="com.glide.db_view">168c8c50db13320059815665dc96196a</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_dictionary_sys_db_view_table_table</sys_update_name><sys_updated_by>C36842_SHARE</sys_updated_by><sys_updated_on>2016-12-19 07:50:26</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>2c1320d81bbaf4d0ba6a437cbc4bcbb3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>sys_db_view_table</table>
+<target_name>View Table.Table</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_c52076bc4f58d60074570ab18110c7a3</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table"><sys_db_view_table action="INSERT_OR_UPDATE"><active>true</active><left_join>false</left_join><order>100</order><sys_class_name>sys_db_view_table</sys_class_name><sys_created_by>Arnoud.Kooi_SHARE</sys_created_by><sys_created_on>2015-12-10 20:41:34</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>c52076bc4f58d60074570ab18110c7a3</sys_id><sys_mod_count>10</sys_mod_count><sys_name>pa_dashboards</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_view_table_c52076bc4f58d60074570ab18110c7a3</sys_update_name><sys_updated_by>C36842_SHARE</sys_updated_by><sys_updated_on>2016-12-17 22:41:07</sys_updated_on><table>pa_dashboards</table><variable_prefix>d</variable_prefix><view display_value="u_pa_widget_to_dashboard">b37b46604f54d60074570ab18110c756</view><where_clause/></sys_db_view_table></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>2c13ec981bbaf4d0ba6a437cbc4bcbbf</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>pa_dashboards</table>
+<target_name>pa_dashboards</target_name>
+<type>View Table</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_field_56148049db772a00d19870d9bf9619ee</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table_field"><sys_db_view_table_field action="INSERT_OR_UPDATE"><field>name</field><sys_class_name>sys_db_view_table_field</sys_class_name><sys_created_by>C36842_SHARE</sys_created_by><sys_created_on>2016-12-17 22:38:56</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>56148049db772a00d19870d9bf9619ee</sys_id><sys_mod_count>0</sys_mod_count><sys_name>name</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_view_table_field_56148049db772a00d19870d9bf9619ee</sys_update_name><sys_updated_by>C36842_SHARE</sys_updated_by><sys_updated_on>2016-12-17 22:38:56</sys_updated_on><table>pa_dashboards_group</table><view_table display_value="pa_dashboards_group">5f42388837336e0083f542f643990e9d</view_table></sys_db_view_table_field></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>2c13ec981bbaf4d0ba6a437cbc4bcbc2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>pa_dashboards_group</table>
+<target_name>name</target_name>
+<type>View Field</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_field_bf5de44837336e0083f542f643990ead</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table_field"><sys_db_view_table_field action="INSERT_OR_UPDATE"><field>sys_id</field><sys_class_name>sys_db_view_table_field</sys_class_name><sys_created_by>C36842_SHARE</sys_created_by><sys_created_on>2016-12-14 23:05:13</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>bf5de44837336e0083f542f643990ead</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sys_id</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_view_table_field_bf5de44837336e0083f542f643990ead</sys_update_name><sys_updated_by>C36842_SHARE</sys_updated_by><sys_updated_on>2016-12-14 23:05:13</sys_updated_on><table>sys_portal_preferences</table><view_table display_value="sys_portal_preferences">554cce604f54d60074570ab18110c76c</view_table></sys_db_view_table_field></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>601320d81bbaf4d0ba6a437cbc4bcbb2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>sys_portal_preferences</table>
+<target_name>sys_id</target_name>
+<type>View Field</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_b37b46604f54d60074570ab18110c756</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view"><sys_db_view action="INSERT_OR_UPDATE"><description>View, used to easy search PA assets.&#13;
+Created for PA Dashboard Search by Arnoud Kooi</description><label>PA Dashboard to Widget</label><name>u_pa_dashboard_to_widget</name><plural>PA Dashboard to Widget</plural><sys_class_name>sys_db_view</sys_class_name><sys_created_by>Arnoud.Kooi_SHARE</sys_created_by><sys_created_on>2015-12-09 23:23:15</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>b37b46604f54d60074570ab18110c756</sys_id><sys_mod_count>3</sys_mod_count><sys_name>u_pa_dashboard_to_widget</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_view_b37b46604f54d60074570ab18110c756</sys_update_name><sys_updated_by>C36842_SHARE</sys_updated_by><sys_updated_on>2016-12-31 20:49:41</sys_updated_on></sys_db_view></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>6013ec981bbaf4d0ba6a437cbc4bcbbe</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>u_pa_dashboard_to_widget</table>
+<target_name>u_pa_dashboard_to_widget</target_name>
+<type>Database View</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_field_10f03abc4f58d60074570ab18110c7e8</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_db_view_table_field action="INSERT_OR_UPDATE">
+<field>name</field>
+<sys_class_name>sys_db_view_table_field</sys_class_name>
+<sys_created_by>Arnoud.Kooi_SHARE</sys_created_by>
+<sys_created_on>2015-12-10 20:44:35</sys_created_on>
+<sys_customer_update>true</sys_customer_update>
+<sys_id>10f03abc4f58d60074570ab18110c7e8</sys_id>
+<sys_mod_count>1</sys_mod_count>
+<sys_name>name</sys_name>
+<sys_package display_value="Global">global</sys_package>
+<sys_policy/>
+<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sys_db_view_table_field_10f03abc4f58d60074570ab18110c7e8</sys_update_name>
+<sys_updated_by>Arnoud.Kooi_SHARE</sys_updated_by>
+<sys_updated_on>2015-12-15 22:10:35</sys_updated_on>
+<table>pa_dashboards</table>
+<view_table display_value="pa_dashboards">c52076bc4f58d60074570ab18110c7a3</view_table>
+</sys_db_view_table_field></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>6013ec981bbaf4d0ba6a437cbc4bcbc1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>pa_dashboards</table>
+<target_name>name</target_name>
+<type>View Field</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_field_9fabf0f9db047200232ad540cf9619cb</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table_field"><sys_db_view_table_field action="INSERT_OR_UPDATE"><field>sys_id</field><sys_class_name>sys_db_view_table_field</sys_class_name><sys_created_by>admin_SHARE</sys_created_by><sys_created_on>2017-01-01 20:52:55</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>9fabf0f9db047200232ad540cf9619cb</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sys_id</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_view_table_field_9fabf0f9db047200232ad540cf9619cb</sys_update_name><sys_updated_by>admin_SHARE</sys_updated_by><sys_updated_on>2017-01-01 20:52:55</sys_updated_on><table>sys_gauge</table><view_table display_value="sys_gauge">c44bb4f9db047200232ad540cf96192a</view_table></sys_db_view_table_field></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>641320d81bbaf4d0ba6a437cbc4bcbb1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>sys_gauge</table>
+<target_name>sys_id</target_name>
+<type>View Field</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_trigger_1cd433f16f85210015244035eb3ee411</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_trigger"><sys_trigger action="INSERT_OR_UPDATE"><application/><calendar/><claimed_by/><document/><document_key/><error_count>0</error_count><job_context/><job_id display_value="RunScriptJob">81c92ce9c0a8016400e5f0d2f784ea78</job_id><last_error/><log>false</log><maintenance>false</maintenance><max_drift/><name>Share Install Logger</name><next_action>2014-01-01 23:29:16</next_action><parent/><priority>100</priority><processing_duration>0</processing_duration><repeat/><run_count>0</run_count><run_dayofmonth/><run_dayofweek>1</run_dayofweek><run_month>1</run_month><run_time>1970-01-01 08:00:00</run_time><run_weekinmonth>1</run_weekinmonth><script>var logClient = new GlideSimpleHTTPClient('https://share.servicenow.com/installLogger.do');&#13;
+var query_string = 'installed_by=' + gs.getUserName() + '&amp;instance_name=' + gs.getProperty('instance_name') + '&amp;artifact=52dedb5e13c076001d2adbf18144b0c7&amp;content=d6de5f5e13c076001d2adbf18144b093';&#13;
+gs.log('posting to: ' + query_string);&#13;
+logClient.get(query_string);</script><state>0</state><sys_created_by/><sys_created_on/><sys_id>1cd433f16f85210015244035eb3ee411</sys_id><sys_mod_count/><sys_scope display_value="Global">global</sys_scope><sys_updated_by/><sys_updated_on/><system_id/><trigger_class>DEFAULT</trigger_class><trigger_type>0</trigger_type></sys_trigger></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>641320d81bbaf4d0ba6a437cbc4bcbb4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table/>
+<target_name>Share Install Logger</target_name>
+<type>Schedule Item</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_e0fe6e7c4f58d60074570ab18110c7e4</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table"><sys_db_view_table action="INSERT_OR_UPDATE"><active>true</active><left_join>false</left_join><order>300</order><sys_class_name>sys_db_view_table</sys_class_name><sys_created_by>Arnoud.Kooi_SHARE</sys_created_by><sys_created_on>2015-12-10 20:36:10</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>e0fe6e7c4f58d60074570ab18110c7e4</sys_id><sys_mod_count>8</sys_mod_count><sys_name>pa_tabs</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_view_table_e0fe6e7c4f58d60074570ab18110c7e4</sys_update_name><sys_updated_by>C36842_SHARE</sys_updated_by><sys_updated_on>2016-12-14 19:43:09</sys_updated_on><table>pa_tabs</table><variable_prefix>t</variable_prefix><view display_value="u_pa_widget_to_dashboard">b37b46604f54d60074570ab18110c756</view><where_clause>t_sys_id = dt_tab</where_clause></sys_db_view_table></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>6413ec981bbaf4d0ba6a437cbc4bcbc0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>pa_tabs</table>
+<target_name>pa_tabs</target_name>
+<type>View Table</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_field_61ab06c24f9c1a0074570ab18110c7b7</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_db_view_table_field action="INSERT_OR_UPDATE">
+<field>active</field>
+<sys_class_name>sys_db_view_table_field</sys_class_name>
+<sys_created_by>Arnoud.Kooi_SHARE</sys_created_by>
+<sys_created_on>2015-12-14 15:14:10</sys_created_on>
+<sys_customer_update>true</sys_customer_update>
+<sys_id>61ab06c24f9c1a0074570ab18110c7b7</sys_id>
+<sys_mod_count>1</sys_mod_count>
+<sys_name>active</sys_name>
+<sys_package display_value="Global">global</sys_package>
+<sys_policy/>
+<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sys_db_view_table_field_61ab06c24f9c1a0074570ab18110c7b7</sys_update_name>
+<sys_updated_by>Arnoud.Kooi_SHARE</sys_updated_by>
+<sys_updated_on>2015-12-15 22:10:34</sys_updated_on>
+<table>pa_dashboards</table>
+<view_table display_value="pa_dashboards">c52076bc4f58d60074570ab18110c7a3</view_table>
+</sys_db_view_table_field></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>6413ec981bbaf4d0ba6a437cbc4bcbc3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>pa_dashboards</table>
+<target_name>active</target_name>
+<type>View Field</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_field_8c513ebc4f58d60074570ab18110c78a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_db_view_table_field action="INSERT_OR_UPDATE">
+<field>sys_id</field>
+<sys_class_name>sys_db_view_table_field</sys_class_name>
+<sys_created_by>Arnoud.Kooi_SHARE</sys_created_by>
+<sys_created_on>2015-12-10 20:46:23</sys_created_on>
+<sys_customer_update>true</sys_customer_update>
+<sys_id>8c513ebc4f58d60074570ab18110c78a</sys_id>
+<sys_mod_count>1</sys_mod_count>
+<sys_name>sys_id</sys_name>
+<sys_package display_value="Global">global</sys_package>
+<sys_policy/>
+<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sys_db_view_table_field_8c513ebc4f58d60074570ab18110c78a</sys_update_name>
+<sys_updated_by>Arnoud.Kooi_SHARE</sys_updated_by>
+<sys_updated_on>2015-12-15 22:10:34</sys_updated_on>
+<table>pa_tabs</table>
+<view_table display_value="pa_tabs">e0fe6e7c4f58d60074570ab18110c7e4</view_table>
+</sys_db_view_table_field></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>681320d81bbaf4d0ba6a437cbc4bcbb0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>pa_tabs</table>
+<target_name>sys_id</target_name>
+<type>View Field</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_field_fadbb3064f105a0074570ab18110c7dc</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_db_view_table_field action="INSERT_OR_UPDATE">
+<field>order</field>
+<sys_class_name>sys_db_view_table_field</sys_class_name>
+<sys_created_by>Arnoud.Kooi_SHARE</sys_created_by>
+<sys_created_on>2015-12-14 23:24:25</sys_created_on>
+<sys_customer_update>true</sys_customer_update>
+<sys_id>fadbb3064f105a0074570ab18110c7dc</sys_id>
+<sys_mod_count>1</sys_mod_count>
+<sys_name>order</sys_name>
+<sys_package display_value="Global">global</sys_package>
+<sys_policy/>
+<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sys_db_view_table_field_fadbb3064f105a0074570ab18110c7dc</sys_update_name>
+<sys_updated_by>Arnoud.Kooi_SHARE</sys_updated_by>
+<sys_updated_on>2015-12-15 22:10:34</sys_updated_on>
+<table>pa_dashboards</table>
+<view_table display_value="pa_dashboards">c52076bc4f58d60074570ab18110c7a3</view_table>
+</sys_db_view_table_field></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>681320d81bbaf4d0ba6a437cbc4bcbb3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>pa_dashboards</table>
+<target_name>order</target_name>
+<type>View Field</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_c44bb4f9db047200232ad540cf96192a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table"><sys_db_view_table action="INSERT_OR_UPDATE"><active>true</active><left_join>true</left_join><order>920</order><sys_class_name>sys_db_view_table</sys_class_name><sys_created_by>admin_SHARE</sys_created_by><sys_created_on>2017-01-01 20:50:55</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>c44bb4f9db047200232ad540cf96192a</sys_id><sys_mod_count>1</sys_mod_count><sys_name>sys_gauge</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_view_table_c44bb4f9db047200232ad540cf96192a</sys_update_name><sys_updated_by>admin_SHARE</sys_updated_by><sys_updated_on>2017-01-01 20:51:20</sys_updated_on><table>sys_gauge</table><variable_prefix>g</variable_prefix><view display_value="u_pa_dashboard_to_widget">b37b46604f54d60074570ab18110c756</view><where_clause>ppr_name = 'sys_id' &amp;&amp; ppr_value = g_sys_id</where_clause></sys_db_view_table></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>6813ec981bbaf4d0ba6a437cbc4bcbbf</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>sys_gauge</table>
+<target_name>sys_gauge</target_name>
+<type>View Table</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_field_4d71fabc4f58d60074570ab18110c757</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_db_view_table_field action="INSERT_OR_UPDATE">
+<field>page</field>
+<sys_class_name>sys_db_view_table_field</sys_class_name>
+<sys_created_by>Arnoud.Kooi_SHARE</sys_created_by>
+<sys_created_on>2015-12-10 20:46:50</sys_created_on>
+<sys_customer_update>true</sys_customer_update>
+<sys_id>4d71fabc4f58d60074570ab18110c757</sys_id>
+<sys_mod_count>1</sys_mod_count>
+<sys_name>page</sys_name>
+<sys_package display_value="Global">global</sys_package>
+<sys_policy/>
+<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sys_db_view_table_field_4d71fabc4f58d60074570ab18110c757</sys_update_name>
+<sys_updated_by>Arnoud.Kooi_SHARE</sys_updated_by>
+<sys_updated_on>2015-12-15 22:10:32</sys_updated_on>
+<table>pa_tabs</table>
+<view_table display_value="pa_tabs">e0fe6e7c4f58d60074570ab18110c7e4</view_table>
+</sys_db_view_table_field></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>6813ec981bbaf4d0ba6a437cbc4bcbc2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>pa_tabs</table>
+<target_name>page</target_name>
+<type>View Field</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_field_df0b623c4f58d60074570ab18110c7eb</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_db_view_table_field action="INSERT_OR_UPDATE">
+<field>view</field>
+<sys_class_name>sys_db_view_table_field</sys_class_name>
+<sys_created_by>Arnoud.Kooi_SHARE</sys_created_by>
+<sys_created_on>2015-12-10 20:19:16</sys_created_on>
+<sys_customer_update>true</sys_customer_update>
+<sys_id>df0b623c4f58d60074570ab18110c7eb</sys_id>
+<sys_mod_count>1</sys_mod_count>
+<sys_name>view</sys_name>
+<sys_package display_value="Global">global</sys_package>
+<sys_policy/>
+<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sys_db_view_table_field_df0b623c4f58d60074570ab18110c7eb</sys_update_name>
+<sys_updated_by>Arnoud.Kooi_SHARE</sys_updated_by>
+<sys_updated_on>2015-12-15 22:10:36</sys_updated_on>
+<table>sys_portal_page</table>
+<view_table display_value="sys_portal_page">d6f9a23c4f58d60074570ab18110c700</view_table>
+</sys_db_view_table_field></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>6c1320d81bbaf4d0ba6a437cbc4bcbb2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>sys_portal_page</table>
+<target_name>view</target_name>
+<type>View Field</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_554cce604f54d60074570ab18110c76c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table"><sys_db_view_table action="INSERT_OR_UPDATE"><active>true</active><left_join>false</left_join><order>800</order><sys_class_name>sys_db_view_table</sys_class_name><sys_created_by>Arnoud.Kooi_SHARE</sys_created_by><sys_created_on>2015-12-09 23:26:23</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>554cce604f54d60074570ab18110c76c</sys_id><sys_mod_count>22</sys_mod_count><sys_name>sys_portal_preferences</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_view_table_554cce604f54d60074570ab18110c76c</sys_update_name><sys_updated_by>C36842_SHARE</sys_updated_by><sys_updated_on>2016-12-14 23:22:39</sys_updated_on><table>sys_portal_preferences</table><variable_prefix>ppr</variable_prefix><view display_value="u_pa_widget_to_dashboard">b37b46604f54d60074570ab18110c756</view><where_clause>ppr_name = 'sys_id' &amp;&amp; p_sys_id = ppr_portal_section</where_clause></sys_db_view_table></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>6c13ec981bbaf4d0ba6a437cbc4bcbbe</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>sys_portal_preferences</table>
+<target_name>sys_portal_preferences</target_name>
+<type>View Table</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_field_31ea5f5e4fd05a0074570ab18110c7f7</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_db_view_table_field action="INSERT_OR_UPDATE">
+<field>breakdown_source</field>
+<sys_class_name>sys_db_view_table_field</sys_class_name>
+<sys_created_by>Arnoud.Kooi_SHARE</sys_created_by>
+<sys_created_on>2015-12-15 15:38:49</sys_created_on>
+<sys_customer_update>true</sys_customer_update>
+<sys_id>31ea5f5e4fd05a0074570ab18110c7f7</sys_id>
+<sys_mod_count>1</sys_mod_count>
+<sys_name>breakdown_source</sys_name>
+<sys_package display_value="Global">global</sys_package>
+<sys_policy/>
+<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sys_db_view_table_field_31ea5f5e4fd05a0074570ab18110c7f7</sys_update_name>
+<sys_updated_by>Arnoud.Kooi_SHARE</sys_updated_by>
+<sys_updated_on>2015-12-15 22:10:33</sys_updated_on>
+<table>pa_dashboards</table>
+<view_table display_value="pa_dashboards">c52076bc4f58d60074570ab18110c7a3</view_table>
+</sys_db_view_table_field></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>6c13ec981bbaf4d0ba6a437cbc4bcbc1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>pa_dashboards</table>
+<target_name>breakdown_source</target_name>
+<type>View Field</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_field_9a679b0a4fdc1a0074570ab18110c77d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_db_view_table_field action="INSERT_OR_UPDATE">
+<field>type</field>
+<sys_class_name>sys_db_view_table_field</sys_class_name>
+<sys_created_by>Arnoud.Kooi_SHARE</sys_created_by>
+<sys_created_on>2015-12-14 20:45:12</sys_created_on>
+<sys_customer_update>true</sys_customer_update>
+<sys_id>9a679b0a4fdc1a0074570ab18110c77d</sys_id>
+<sys_mod_count>1</sys_mod_count>
+<sys_name>type</sys_name>
+<sys_package display_value="Global">global</sys_package>
+<sys_policy/>
+<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sys_db_view_table_field_9a679b0a4fdc1a0074570ab18110c77d</sys_update_name>
+<sys_updated_by>Arnoud.Kooi_SHARE</sys_updated_by>
+<sys_updated_on>2015-12-15 22:10:34</sys_updated_on>
+<table>pa_widgets</table>
+<view_table display_value="pa_widgets">28cb8e604f54d60074570ab18110c7ab</view_table>
+</sys_db_view_table_field></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>a01320d81bbaf4d0ba6a437cbc4bcbb1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>pa_widgets</table>
+<target_name>type</target_name>
+<type>View Field</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_2c8eae95dbc43240d19870d9bf9619a5</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>C36842_SHARE</sys_created_by><sys_created_on>2016-12-31 15:58:41</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>2c8eae95dbc43240d19870d9bf9619a5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>.pa_viewer</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="">3b7e6a59dbc43240d19870d9bf9619aa</sys_security_acl><sys_update_name>sys_security_acl_role_2c8eae95dbc43240d19870d9bf9619a5</sys_update_name><sys_updated_by>C36842_SHARE</sys_updated_by><sys_updated_on>2016-12-31 15:58:41</sys_updated_on><sys_user_role display_value="pa_viewer" name="pa_viewer">a90d30b3bf101100b96dac808c073950</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>a01320d81bbaf4d0ba6a437cbc4bcbb4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>3b7e6a59dbc43240d19870d9bf9619aa</table>
+<target_name>.pa_viewer</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_d6f9a23c4f58d60074570ab18110c700</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table"><sys_db_view_table action="INSERT_OR_UPDATE"><active>true</active><left_join>false</left_join><order>400</order><sys_class_name>sys_db_view_table</sys_class_name><sys_created_by>Arnoud.Kooi_SHARE</sys_created_by><sys_created_on>2015-12-10 20:14:50</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>d6f9a23c4f58d60074570ab18110c700</sys_id><sys_mod_count>8</sys_mod_count><sys_name>sys_portal_page</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_view_table_d6f9a23c4f58d60074570ab18110c700</sys_update_name><sys_updated_by>C36842_SHARE</sys_updated_by><sys_updated_on>2016-12-14 19:42:23</sys_updated_on><table>sys_portal_page</table><variable_prefix>ppa</variable_prefix><view display_value="u_pa_widget_to_dashboard">b37b46604f54d60074570ab18110c756</view><where_clause>t_page = ppa_sys_id</where_clause></sys_db_view_table></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>a013ec981bbaf4d0ba6a437cbc4bcbc0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>sys_portal_page</table>
+<target_name>sys_portal_page</target_name>
+<type>View Table</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_field_5b852d54373b6e0083f542f643990e72</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table_field"><sys_db_view_table_field action="INSERT_OR_UPDATE"><field>sys_id</field><sys_class_name>sys_db_view_table_field</sys_class_name><sys_created_by>C36842_SHARE</sys_created_by><sys_created_on>2016-12-15 21:49:09</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>5b852d54373b6e0083f542f643990e72</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sys_id</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_view_table_field_5b852d54373b6e0083f542f643990e72</sys_update_name><sys_updated_by>C36842_SHARE</sys_updated_by><sys_updated_on>2016-12-15 21:49:09</sys_updated_on><table>sys_report</table><view_table display_value="sys_report">7f452d54373b6e0083f542f643990e40</view_table></sys_db_view_table_field></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>a013ec981bbaf4d0ba6a437cbc4bcbc3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>sys_report</table>
+<target_name>sys_id</target_name>
+<type>View Field</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_field_87d0babc4f58d60074570ab18110c713</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_db_view_table_field action="INSERT_OR_UPDATE">
+<field>sys_id</field>
+<sys_class_name>sys_db_view_table_field</sys_class_name>
+<sys_created_by>Arnoud.Kooi_SHARE</sys_created_by>
+<sys_created_on>2015-12-10 20:44:23</sys_created_on>
+<sys_customer_update>true</sys_customer_update>
+<sys_id>87d0babc4f58d60074570ab18110c713</sys_id>
+<sys_mod_count>1</sys_mod_count>
+<sys_name>sys_id</sys_name>
+<sys_package display_value="Global">global</sys_package>
+<sys_policy/>
+<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sys_db_view_table_field_87d0babc4f58d60074570ab18110c713</sys_update_name>
+<sys_updated_by>Arnoud.Kooi_SHARE</sys_updated_by>
+<sys_updated_on>2015-12-15 22:10:35</sys_updated_on>
+<table>pa_dashboards</table>
+<view_table display_value="pa_dashboards">c52076bc4f58d60074570ab18110c7a3</view_table>
+</sys_db_view_table_field></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>a41320d81bbaf4d0ba6a437cbc4bcbb0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>pa_dashboards</table>
+<target_name>sys_id</target_name>
+<type>View Field</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_field_f7208cc5db772a00d19870d9bf9619bf</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table_field"><sys_db_view_table_field action="INSERT_OR_UPDATE"><field>name</field><sys_class_name>sys_db_view_table_field</sys_class_name><sys_created_by>C36842_SHARE</sys_created_by><sys_created_on>2016-12-17 22:21:54</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>f7208cc5db772a00d19870d9bf9619bf</sys_id><sys_mod_count>0</sys_mod_count><sys_name>name</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_view_table_field_f7208cc5db772a00d19870d9bf9619bf</sys_update_name><sys_updated_by>C36842_SHARE</sys_updated_by><sys_updated_on>2016-12-17 22:21:54</sys_updated_on><table>pa_tabs</table><view_table display_value="pa_tabs">e0fe6e7c4f58d60074570ab18110c7e4</view_table></sys_db_view_table_field></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>a41320d81bbaf4d0ba6a437cbc4bcbb3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>pa_tabs</table>
+<target_name>name</target_name>
+<type>View Field</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_module_a7709995db443240d19870d9bf961975</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Performance Analytics">00ede6001b120100763d91eebc07137f</application><assessment/><content_page/><device_type/><filter/><hint/><homepage/><image>images/icons/piechrt.gif</image><link_type>DIRECT</link_type><map_page/><mobile_title>Dashboards</mobile_title><mobile_view_name>Mobile</mobile_view_name><name/><order>5</order><override_menu_roles>false</override_menu_roles><query>pa_widget_search.do</query><report/><roles>admin,pa_viewer,pa_contributor</roles><survey/><survey_overwrite>true</survey_overwrite><sys_class_name>sys_app_module</sys_class_name><sys_created_by>C36842_SHARE</sys_created_by><sys_created_on>2016-12-31 09:06:47</sys_created_on><sys_customer_update>true</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>a7709995db443240d19870d9bf961975</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Dashboard search</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_app_module_a7709995db443240d19870d9bf961975</sys_update_name><sys_updated_by>C36842_SHARE</sys_updated_by><sys_updated_on>2016-12-31 09:06:47</sys_updated_on><timeline_page/><title>Dashboard search</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>a413ec981bbaf4d0ba6a437cbc4bcbbd</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table/>
+<target_name>Dashboard search</target_name>
+<type>Module</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_7f452d54373b6e0083f542f643990e40</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table"><sys_db_view_table action="INSERT_OR_UPDATE"><active>true</active><left_join>true</left_join><order>910</order><sys_class_name>sys_db_view_table</sys_class_name><sys_created_by>C36842_SHARE</sys_created_by><sys_created_on>2016-12-15 21:48:06</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>7f452d54373b6e0083f542f643990e40</sys_id><sys_mod_count>1</sys_mod_count><sys_name>sys_report</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_view_table_7f452d54373b6e0083f542f643990e40</sys_update_name><sys_updated_by>C36842_SHARE</sys_updated_by><sys_updated_on>2016-12-15 21:50:47</sys_updated_on><table>sys_report</table><variable_prefix>r</variable_prefix><view display_value="u_pa_widget_to_dashboard">b37b46604f54d60074570ab18110c756</view><where_clause>ppr_name = 'sys_id' &amp;&amp; ppr_value = r_sys_id</where_clause></sys_db_view_table></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>a413ec981bbaf4d0ba6a437cbc4bcbbf</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>sys_report</table>
+<target_name>sys_report</target_name>
+<type>View Table</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_field_41486ef84f58d60074570ab18110c785</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_db_view_table_field action="INSERT_OR_UPDATE">
+<field>sys_id</field>
+<sys_class_name>sys_db_view_table_field</sys_class_name>
+<sys_created_by>Arnoud.Kooi_SHARE</sys_created_by>
+<sys_created_on>2015-12-10 20:06:52</sys_created_on>
+<sys_customer_update>true</sys_customer_update>
+<sys_id>41486ef84f58d60074570ab18110c785</sys_id>
+<sys_mod_count>1</sys_mod_count>
+<sys_name>sys_id</sys_name>
+<sys_package display_value="Global">global</sys_package>
+<sys_policy/>
+<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sys_db_view_table_field_41486ef84f58d60074570ab18110c785</sys_update_name>
+<sys_updated_by>Arnoud.Kooi_SHARE</sys_updated_by>
+<sys_updated_on>2015-12-15 22:10:37</sys_updated_on>
+<table>pa_widgets</table>
+<view_table display_value="pa_widgets">28cb8e604f54d60074570ab18110c7ab</view_table>
+</sys_db_view_table_field></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>a413ec981bbaf4d0ba6a437cbc4bcbc2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>pa_widgets</table>
+<target_name>sys_id</target_name>
+<type>View Field</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_field_cc1da40837336e0083f542f643990e97</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table_field"><sys_db_view_table_field action="INSERT_OR_UPDATE"><field>sys_id</field><sys_class_name>sys_db_view_table_field</sys_class_name><sys_created_by>C36842_SHARE</sys_created_by><sys_created_on>2016-12-14 23:04:05</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>cc1da40837336e0083f542f643990e97</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sys_id</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_view_table_field_cc1da40837336e0083f542f643990e97</sys_update_name><sys_updated_by>C36842_SHARE</sys_updated_by><sys_updated_on>2016-12-14 23:04:05</sys_updated_on><table>sys_portal</table><view_table display_value="sys_portal">4cd82ef84f58d60074570ab18110c737</view_table></sys_db_view_table_field></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>a81320d81bbaf4d0ba6a437cbc4bcbb2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>sys_portal</table>
+<target_name>sys_id</target_name>
+<type>View Field</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_4cd82ef84f58d60074570ab18110c737</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table"><sys_db_view_table action="INSERT_OR_UPDATE"><active>true</active><left_join>false</left_join><order>700</order><sys_class_name>sys_db_view_table</sys_class_name><sys_created_by>Arnoud.Kooi_SHARE</sys_created_by><sys_created_on>2015-12-10 20:09:27</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>4cd82ef84f58d60074570ab18110c737</sys_id><sys_mod_count>10</sys_mod_count><sys_name>sys_portal</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_view_table_4cd82ef84f58d60074570ab18110c737</sys_update_name><sys_updated_by>C36842_SHARE</sys_updated_by><sys_updated_on>2016-12-14 23:08:52</sys_updated_on><table>sys_portal</table><variable_prefix>p</variable_prefix><view display_value="u_pa_widget_to_dashboard">b37b46604f54d60074570ab18110c756</view><where_clause>gcp_portal_widget = p_sys_id</where_clause></sys_db_view_table></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>a813ec981bbaf4d0ba6a437cbc4bcbbe</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>sys_portal</table>
+<target_name>sys_portal</target_name>
+<type>View Table</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_field_2aa174c837336e0083f542f643990e0e</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table_field"><sys_db_view_table_field action="INSERT_OR_UPDATE"><field>group</field><sys_class_name>sys_db_view_table_field</sys_class_name><sys_created_by>C36842_SHARE</sys_created_by><sys_created_on>2016-12-14 23:24:24</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>2aa174c837336e0083f542f643990e0e</sys_id><sys_mod_count>1</sys_mod_count><sys_name>group</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_view_table_field_2aa174c837336e0083f542f643990e0e</sys_update_name><sys_updated_by>C36842_SHARE</sys_updated_by><sys_updated_on>2016-12-14 23:24:29</sys_updated_on><table>pa_dashboards</table><view_table display_value="pa_dashboards">c52076bc4f58d60074570ab18110c7a3</view_table></sys_db_view_table_field></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>a813ec981bbaf4d0ba6a437cbc4bcbc1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>pa_dashboards</table>
+<target_name>group</target_name>
+<type>View Field</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_field_bedb70b9db047200232ad540cf9619c9</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table_field"><sys_db_view_table_field action="INSERT_OR_UPDATE"><field>report</field><sys_class_name>sys_db_view_table_field</sys_class_name><sys_created_by>admin_SHARE</sys_created_by><sys_created_on>2017-01-01 20:53:45</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>bedb70b9db047200232ad540cf9619c9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>report</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_view_table_field_bedb70b9db047200232ad540cf9619c9</sys_update_name><sys_updated_by>admin_SHARE</sys_updated_by><sys_updated_on>2017-01-01 20:53:45</sys_updated_on><table>sys_gauge</table><view_table display_value="sys_gauge">c44bb4f9db047200232ad540cf96192a</view_table></sys_db_view_table_field></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>ac1320d81bbaf4d0ba6a437cbc4bcbb1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>sys_gauge</table>
+<target_name>report</target_name>
+<type>View Field</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_field_10ab78f9db047200232ad540cf96193a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table_field"><sys_db_view_table_field action="INSERT_OR_UPDATE"><field>name</field><sys_class_name>sys_db_view_table_field</sys_class_name><sys_created_by>admin_SHARE</sys_created_by><sys_created_on>2017-01-01 20:52:43</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>10ab78f9db047200232ad540cf96193a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>name</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_view_table_field_10ab78f9db047200232ad540cf96193a</sys_update_name><sys_updated_by>admin_SHARE</sys_updated_by><sys_updated_on>2017-01-01 20:52:43</sys_updated_on><table>sys_gauge</table><view_table display_value="sys_gauge">c44bb4f9db047200232ad540cf96192a</view_table></sys_db_view_table_field></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>ac13ec981bbaf4d0ba6a437cbc4bcbc0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>sys_gauge</table>
+<target_name>name</target_name>
+<type>View Field</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_field_86c521d0373b6e0083f542f643990eaf</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table_field"><sys_db_view_table_field action="INSERT_OR_UPDATE"><field>title</field><sys_class_name>sys_db_view_table_field</sys_class_name><sys_created_by>C36842_SHARE</sys_created_by><sys_created_on>2016-12-15 21:50:10</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>86c521d0373b6e0083f542f643990eaf</sys_id><sys_mod_count>0</sys_mod_count><sys_name>title</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_view_table_field_86c521d0373b6e0083f542f643990eaf</sys_update_name><sys_updated_by>C36842_SHARE</sys_updated_by><sys_updated_on>2016-12-15 21:50:10</sys_updated_on><table>sys_report</table><view_table display_value="sys_report">7f452d54373b6e0083f542f643990e40</view_table></sys_db_view_table_field></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>e01320d81bbaf4d0ba6a437cbc4bcbb0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>sys_report</table>
+<target_name>title</target_name>
+<type>View Field</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_field_f558aef84f58d60074570ab18110c7a4</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_db_view_table_field action="INSERT_OR_UPDATE">
+<field>name</field>
+<sys_class_name>sys_db_view_table_field</sys_class_name>
+<sys_created_by>Arnoud.Kooi_SHARE</sys_created_by>
+<sys_created_on>2015-12-10 20:07:20</sys_created_on>
+<sys_customer_update>true</sys_customer_update>
+<sys_id>f558aef84f58d60074570ab18110c7a4</sys_id>
+<sys_mod_count>1</sys_mod_count>
+<sys_name>name</sys_name>
+<sys_package display_value="Global">global</sys_package>
+<sys_policy/>
+<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sys_db_view_table_field_f558aef84f58d60074570ab18110c7a4</sys_update_name>
+<sys_updated_by>Arnoud.Kooi_SHARE</sys_updated_by>
+<sys_updated_on>2015-12-15 22:10:37</sys_updated_on>
+<table>pa_widgets</table>
+<view_table display_value="pa_widgets">28cb8e604f54d60074570ab18110c7ab</view_table>
+</sys_db_view_table_field></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>e01320d81bbaf4d0ba6a437cbc4bcbb3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>pa_widgets</table>
+<target_name>name</target_name>
+<type>View Field</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_7d6400c437ff2e0083f542f643990edd</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table"><sys_db_view_table action="INSERT_OR_UPDATE"><active>true</active><left_join>false</left_join><order>600</order><sys_class_name>sys_db_view_table</sys_class_name><sys_created_by>C36842_SHARE</sys_created_by><sys_created_on>2016-12-14 20:06:36</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>7d6400c437ff2e0083f542f643990edd</sys_id><sys_mod_count>7</sys_mod_count><sys_name>sys_grid_canvas_pane</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_view_table_7d6400c437ff2e0083f542f643990edd</sys_update_name><sys_updated_by>C36842_SHARE</sys_updated_by><sys_updated_on>2016-12-14 23:08:34</sys_updated_on><table>sys_grid_canvas_pane</table><variable_prefix>gcp</variable_prefix><view display_value="u_pa_widget_to_dashboard">b37b46604f54d60074570ab18110c756</view><where_clause>gcp_grid_canvas = gc_sys_id</where_clause></sys_db_view_table></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>e013ec981bbaf4d0ba6a437cbc4bcbbf</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>sys_grid_canvas_pane</table>
+<target_name>sys_grid_canvas_pane</target_name>
+<type>View Table</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_field_3a2de84437336e0083f542f643990e96</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table_field"><sys_db_view_table_field action="INSERT_OR_UPDATE"><field>page</field><sys_class_name>sys_db_view_table_field</sys_class_name><sys_created_by>C36842_SHARE</sys_created_by><sys_created_on>2016-12-14 23:04:21</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>3a2de84437336e0083f542f643990e96</sys_id><sys_mod_count>0</sys_mod_count><sys_name>page</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_view_table_field_3a2de84437336e0083f542f643990e96</sys_update_name><sys_updated_by>C36842_SHARE</sys_updated_by><sys_updated_on>2016-12-14 23:04:21</sys_updated_on><table>sys_portal</table><view_table display_value="sys_portal">4cd82ef84f58d60074570ab18110c737</view_table></sys_db_view_table_field></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>e013ec981bbaf4d0ba6a437cbc4bcbc2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>sys_portal</table>
+<target_name>page</target_name>
+<type>View Field</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_field_caf38c09db772a00d19870d9bf9619e1</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table_field"><sys_db_view_table_field action="INSERT_OR_UPDATE"><field>sys_id</field><sys_class_name>sys_db_view_table_field</sys_class_name><sys_created_by>C36842_SHARE</sys_created_by><sys_created_on>2016-12-17 22:38:25</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>caf38c09db772a00d19870d9bf9619e1</sys_id><sys_mod_count>1</sys_mod_count><sys_name>sys_id</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_view_table_field_caf38c09db772a00d19870d9bf9619e1</sys_update_name><sys_updated_by>C36842_SHARE</sys_updated_by><sys_updated_on>2016-12-17 22:38:33</sys_updated_on><table>pa_dashboards_group</table><view_table display_value="pa_dashboards_group">5f42388837336e0083f542f643990e9d</view_table></sys_db_view_table_field></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>e41320d81bbaf4d0ba6a437cbc4bcbb2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>pa_dashboards_group</table>
+<target_name>sys_id</target_name>
+<type>View Field</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_46cf26bc4f58d60074570ab18110c73c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table"><sys_db_view_table action="INSERT_OR_UPDATE"><active>true</active><left_join>false</left_join><order>200</order><sys_class_name>sys_db_view_table</sys_class_name><sys_created_by>Arnoud.Kooi_SHARE</sys_created_by><sys_created_on>2015-12-10 20:40:12</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>46cf26bc4f58d60074570ab18110c73c</sys_id><sys_mod_count>5</sys_mod_count><sys_name>pa_m2m_dashboard_tabs</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_view_table_46cf26bc4f58d60074570ab18110c73c</sys_update_name><sys_updated_by>C36842_SHARE</sys_updated_by><sys_updated_on>2016-12-14 19:43:18</sys_updated_on><table>pa_m2m_dashboard_tabs</table><variable_prefix>dt</variable_prefix><view display_value="u_pa_widget_to_dashboard">b37b46604f54d60074570ab18110c756</view><where_clause>d_sys_id = dt_dashboard</where_clause></sys_db_view_table></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>e413ec981bbaf4d0ba6a437cbc4bcbbe</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>pa_m2m_dashboard_tabs</table>
+<target_name>pa_m2m_dashboard_tabs</target_name>
+<type>View Table</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_field_2701fabc4f58d60074570ab18110c760</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_db_view_table_field action="INSERT_OR_UPDATE">
+<field>tab</field>
+<sys_class_name>sys_db_view_table_field</sys_class_name>
+<sys_created_by>Arnoud.Kooi_SHARE</sys_created_by>
+<sys_created_on>2015-12-10 20:45:17</sys_created_on>
+<sys_customer_update>true</sys_customer_update>
+<sys_id>2701fabc4f58d60074570ab18110c760</sys_id>
+<sys_mod_count>1</sys_mod_count>
+<sys_name>tab</sys_name>
+<sys_package display_value="Global">global</sys_package>
+<sys_policy/>
+<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sys_db_view_table_field_2701fabc4f58d60074570ab18110c760</sys_update_name>
+<sys_updated_by>Arnoud.Kooi_SHARE</sys_updated_by>
+<sys_updated_on>2015-12-15 22:10:35</sys_updated_on>
+<table>pa_m2m_dashboard_tabs</table>
+<view_table display_value="pa_m2m_dashboard_tabs">46cf26bc4f58d60074570ab18110c73c</view_table>
+</sys_db_view_table_field></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>e413ec981bbaf4d0ba6a437cbc4bcbc1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>pa_m2m_dashboard_tabs</table>
+<target_name>tab</target_name>
+<type>View Field</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_field_a26da40837336e0083f542f643990e9a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table_field"><sys_db_view_table_field action="INSERT_OR_UPDATE"><field>value</field><sys_class_name>sys_db_view_table_field</sys_class_name><sys_created_by>C36842_SHARE</sys_created_by><sys_created_on>2016-12-14 23:05:25</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>a26da40837336e0083f542f643990e9a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>value</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_view_table_field_a26da40837336e0083f542f643990e9a</sys_update_name><sys_updated_by>C36842_SHARE</sys_updated_by><sys_updated_on>2016-12-14 23:05:25</sys_updated_on><table>sys_portal_preferences</table><view_table display_value="sys_portal_preferences">554cce604f54d60074570ab18110c76c</view_table></sys_db_view_table_field></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>e81320d81bbaf4d0ba6a437cbc4bcbb1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>sys_portal_preferences</table>
+<target_name>value</target_name>
+<type>View Field</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_7a7c333737ef2e0083f542f643990ed3</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="7a7c333737ef2e0083f542f643990ed3" sys_domain="global" table="u_pa_widget_to_dashboard" version="3" view=""><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>u_pa_widget_to_dashboard</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>C36842_SHARE</sys_created_by><sys_created_on>2016-12-14 19:31:37</sys_created_on><sys_customer_update>true</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>7a7c333737ef2e0083f542f643990ed3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_pa_widget_to_dashboard</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_section_7a7c333737ef2e0083f542f643990ed3</sys_update_name><sys_updated_by>C36842_SHARE</sys_updated_by><sys_updated_on>2016-12-14 19:31:37</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>e81320d81bbaf4d0ba6a437cbc4bcbb4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>u_pa_widget_to_dashboard</table>
+<target_name>u_pa_widget_to_dashboard</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_field_0c5dac4437336e0083f542f643990ea2</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table_field"><sys_db_view_table_field action="INSERT_OR_UPDATE"><field>name</field><sys_class_name>sys_db_view_table_field</sys_class_name><sys_created_by>C36842_SHARE</sys_created_by><sys_created_on>2016-12-14 23:05:05</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>0c5dac4437336e0083f542f643990ea2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>name</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_view_table_field_0c5dac4437336e0083f542f643990ea2</sys_update_name><sys_updated_by>C36842_SHARE</sys_updated_by><sys_updated_on>2016-12-14 23:05:05</sys_updated_on><table>sys_portal_preferences</table><view_table display_value="sys_portal_preferences">554cce604f54d60074570ab18110c76c</view_table></sys_db_view_table_field></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>e813ec981bbaf4d0ba6a437cbc4bcbc0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>sys_portal_preferences</table>
+<target_name>name</target_name>
+<type>View Field</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_field_9795e594373b6e0083f542f643990edc</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table_field"><sys_db_view_table_field action="INSERT_OR_UPDATE"><field>description</field><sys_class_name>sys_db_view_table_field</sys_class_name><sys_created_by>C36842_SHARE</sys_created_by><sys_created_on>2016-12-15 21:49:26</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>9795e594373b6e0083f542f643990edc</sys_id><sys_mod_count>0</sys_mod_count><sys_name>description</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_view_table_field_9795e594373b6e0083f542f643990edc</sys_update_name><sys_updated_by>C36842_SHARE</sys_updated_by><sys_updated_on>2016-12-15 21:49:26</sys_updated_on><table>sys_report</table><view_table display_value="sys_report">7f452d54373b6e0083f542f643990e40</view_table></sys_db_view_table_field></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>ec1320d81bbaf4d0ba6a437cbc4bcbb0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>sys_report</table>
+<target_name>description</target_name>
+<type>View Field</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_3b7e6a59dbc43240d19870d9bf9619aa</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Allow read for records in u_pa_dashboard_to_widget, for users with role pa_viewer.</description><name>u_pa_dashboard_to_widget</name><operation display_value="read">read</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>C36842_SHARE</sys_created_by><sys_created_on>2016-12-31 15:58:41</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>3b7e6a59dbc43240d19870d9bf9619aa</sys_id><sys_mod_count>1</sys_mod_count><sys_name>u_pa_dashboard_to_widget</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_3b7e6a59dbc43240d19870d9bf9619aa</sys_update_name><sys_updated_by>C36842_SHARE</sys_updated_by><sys_updated_on>2016-12-31 20:55:03</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>ec1320d81bbaf4d0ba6a437cbc4bcbb3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>u_pa_dashboard_to_widget</table>
+<target_name>u_pa_dashboard_to_widget</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_cbc1088437ff2e0083f542f643990e8f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table"><sys_db_view_table action="INSERT_OR_UPDATE"><active>true</active><left_join>false</left_join><order>500</order><sys_class_name>sys_db_view_table</sys_class_name><sys_created_by>C36842_SHARE</sys_created_by><sys_created_on>2016-12-14 19:56:01</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>cbc1088437ff2e0083f542f643990e8f</sys_id><sys_mod_count>4</sys_mod_count><sys_name>sys_grid_canvas</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_view_table_cbc1088437ff2e0083f542f643990e8f</sys_update_name><sys_updated_by>C36842_SHARE</sys_updated_by><sys_updated_on>2016-12-14 23:08:13</sys_updated_on><table>sys_grid_canvas</table><variable_prefix>gc</variable_prefix><view display_value="u_pa_widget_to_dashboard">b37b46604f54d60074570ab18110c756</view><where_clause>gc_legacy_page = ppa_sys_id</where_clause></sys_db_view_table></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>ec13ec981bbaf4d0ba6a437cbc4bcbbf</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>sys_grid_canvas</table>
+<target_name>sys_grid_canvas</target_name>
+<type>View Table</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_view_table_field_58fb2e3c4f58d60074570ab18110c7bf</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_db_view_table_field action="INSERT_OR_UPDATE">
+<field>view</field>
+<sys_class_name>sys_db_view_table_field</sys_class_name>
+<sys_created_by>Arnoud.Kooi_SHARE</sys_created_by>
+<sys_created_on>2015-12-10 20:22:44</sys_created_on>
+<sys_customer_update>true</sys_customer_update>
+<sys_id>58fb2e3c4f58d60074570ab18110c7bf</sys_id>
+<sys_mod_count>1</sys_mod_count>
+<sys_name>view</sys_name>
+<sys_package display_value="Global">global</sys_package>
+<sys_policy/>
+<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sys_db_view_table_field_58fb2e3c4f58d60074570ab18110c7bf</sys_update_name>
+<sys_updated_by>Arnoud.Kooi_SHARE</sys_updated_by>
+<sys_updated_on>2015-12-15 22:10:36</sys_updated_on>
+<table>sys_portal_page</table>
+<view_table display_value="sys_portal_page">d6f9a23c4f58d60074570ab18110c700</view_table>
+</sys_db_view_table_field></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PA Dashboard Search">5013ec981bbaf4d0ba6a437cbc4bcbbd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2021-09-20 13:36:17</sys_created_on>
+<sys_id>ec13ec981bbaf4d0ba6a437cbc4bcbc2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15ca69ae8c80000000</sys_recorded_at>
+<sys_updated_by>Arnoud.Kooi</sys_updated_by>
+<sys_updated_on>2021-09-20 13:36:17</sys_updated_on>
+<table>sys_portal_page</table>
+<target_name>view</target_name>
+<type>View Field</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
