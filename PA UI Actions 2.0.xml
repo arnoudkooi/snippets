@@ -1,0 +1,1769 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2021-11-10 15:31:23">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Adds a few UI Actions to your Indicator and Widget Forms see https://youtu.be/sjIaUDd8P7g
+
+•	Preview Widget: Preview your wiget without adding ot or loading it on a Dashboard
+•	Test Conditions in List: Opens the Indicator conditions in a List, also includes Indicator source condition
+•	View used Indicators in List: Opens the list of used indicators in a Formula Indicator in a list (can also be added as related list to formula indicator)
+•	Set Conditions from Clipboard: Show a Prompt in witch you can paste your query prepared in a List, so you don't have to replicate it manually.
+•	Add the technical field name list to the top of a PA script
+•	Create and immediate run a PA Job for development from an Automated Indicator. https://youtu.be/fbAYwLHfKko
+•	Add all the Responsive Canvas Dashboard assets to current update set
+•	Run and stay data collection job
+•	Asses Breakdowns on any Form, and create if not exists https://youtu.be/iqo-lW9I87A
+•	Asses and fix Breakdowns for a Formula Indicator https://youtu.be/xjXJC6AMLVI
+•	Asses and manage Breakdown Exclusion matrix in a... Matrix
+
+For questions or feedback, please reach out to Arnoud.Kooi@servicenow.com
+</description>
+<inserted/>
+<name>PA - UI Action Utils</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>5dfdb13cdbdf32008eab5cd4dc9619e2</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>arnoud.kooi</sys_created_by>
+<sys_created_on>2021-11-10 15:31:23</sys_created_on>
+<sys_id>bb76a76c1b37f050ba6a437cbc4bcb86</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>arnoud.kooi</sys_updated_by>
+<sys_updated_on>2021-11-10 15:31:23</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_11d2fe9b4f244b009881c5c18110c7d0</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name/&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;true&lt;/client&gt;&lt;comments/&gt;&lt;condition&gt;!current.isNewRecord() &amp;amp;&amp;amp; current.type == 1&lt;/condition&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;false&lt;/form_button&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;true&lt;/form_link&gt;&lt;form_style&gt;primary&lt;/form_style&gt;&lt;hint/&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;name&gt;Check Breakdown Exclusions&lt;/name&gt;&lt;onclick&gt;checkBreakDownExclusions()&lt;/onclick&gt;&lt;order&gt;2&lt;/order&gt;&lt;script&gt;&lt;![CDATA[function checkBreakDownExclusions() {
+	var gm = new GlideModal('ind_bd_exclusion',false, 'modal-lg');
+	gm.setPreference("sysparm_indicator", g_form.getUniqueValue());
+	gm.setTitle("Asses Breakdown Exclusion Matrix");
+	gm.render();
+}
+]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-08-18 14:06:50&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;11d2fe9b4f244b009881c5c18110c7d0&lt;/sys_id&gt;&lt;sys_mod_count&gt;9&lt;/sys_mod_count&gt;&lt;sys_name&gt;Check Breakdown Exclusions&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_11d2fe9b4f244b009881c5c18110c7d0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Arnoud.Kooi&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-08-18 22:01:41&lt;/sys_updated_on&gt;&lt;table&gt;pa_indicators&lt;/table&gt;&lt;ui11_compatible&gt;false&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-2035740880</payload_hash>
+<remote_update_set display_value="PA - UI Action Utils">bb76a76c1b37f050ba6a437cbc4bcb86</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>arnoud.kooi</sys_created_by>
+<sys_created_on>2021-11-10 15:31:23</sys_created_on>
+<sys_id>3376a76c1b37f050ba6a437cbc4bcb89</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15e03f6db7b0000001</sys_recorded_at>
+<sys_updated_by>arnoud.kooi</sys_updated_by>
+<sys_updated_on>2021-11-10 15:31:23</sys_updated_on>
+<table>pa_indicators</table>
+<target_name>Check Breakdown Exclusions</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid>17c50d90ce7c8b0090f9dacbd7531e26</update_guid>
+<update_guid_history>17c50d90ce7c8b0090f9dacbd7531e26:-2035740880,598f9c238b284b00714a92b35c930a6a:-2035740880,94be5023a5284b004f8fa55e1792f31d:1532062353,ec1e102390284b004d4c2c8b6e7d9c5f:-233180575,ffabd4afdee44b00c3ec1a1cc1bad518:-1541043617,b1ca54af54e44b0007ccfd94e1f00c01:-1052663642,558a1c6f8de44b00734c68671f9d953f:-447360860,f10a146f27e44b0017bddc009f23deef:1354028992,cc09506f66e44b00d47efbc178147610:1623501998,6613f6dbc8244b004bc9175518298d90:1658631702,59d2fe9bc9244b000f75d9c3db796dd1:560397841</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_6dea047f4f1e220074570ab18110c770</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;pa_indicators&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Add data to ScratchPad&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous) {
+	
+	if (current.type == 2)
+		g_scratchpad.formula = current.formula.toString();
+	else {
+		g_scratchpad.cube_conditions = current.cube.conditions.toString();
+		g_scratchpad.cube_facts_table = current.cube.facts_table.toString();
+	}
+	
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin_SHARE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-10-12 22:39:59&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;6dea047f4f1e220074570ab18110c770&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;Add data to ScratchPad&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_6dea047f4f1e220074570ab18110c770&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Arnoud.Kooi_SHARE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-11-18 20:36:43&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;before_display&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=6dea047f4f1e220074570ab18110c770"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash/>
+<remote_update_set display_value="PA - UI Action Utils">bb76a76c1b37f050ba6a437cbc4bcb86</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>arnoud.kooi</sys_created_by>
+<sys_created_on>2021-11-10 15:31:23</sys_created_on>
+<sys_id>3776a76c1b37f050ba6a437cbc4bcb88</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15c8cd77b180000000</sys_recorded_at>
+<sys_updated_by>arnoud.kooi</sys_updated_by>
+<sys_updated_on>2021-11-10 15:31:23</sys_updated_on>
+<table>pa_indicators</table>
+<target_name>Add data to ScratchPad</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_page_8ff17db24f240b009881c5c18110c774</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_page"&gt;&lt;sys_ui_page action="INSERT_OR_UPDATE"&gt;&lt;category&gt;general&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[var data = {};
+var indicator = "${sysparm_indicator}";
+
+function addMapping(ind, bd, order) {
+
+	jQuery.get("/pa_ind_bds_json.do?action=addmapping&amp;indicator=" + ind
+		+ "&amp;breakdown=" + bd + "&amp;order=" + order, function (resp) {
+			if (('' + resp).length == 32)
+				jQuery('#td-' + ind + '-' + bd).
+					html('&lt;span class="green icon icon-success-circle"&gt;&lt;/span&gt;');
+			else if (resp == 'invalid')
+				jQuery('#td-' + ind + '-' + bd).
+					html('&lt;span title="Invalid mapping(wrong factstable?). Consider removing!" class="orange icon icon-warning-circle"&gt;&lt;/span&gt;');
+			updateHyperlink();
+			GlideList2
+			.get('pa_indicators.pa_indicator_breakdowns.indicator')
+			.setFilterAndRefresh('');
+
+		});
+
+}
+
+function updateHyperlink() {
+
+	var $hl = jQuery('.blue');
+	if ($hl.length &gt; 0) {
+		jQuery('#addall').html('&lt;a href="javascript:addAll()"&gt;Add all missing mappings&lt;/a&gt;');
+	}
+	else
+		jQuery('#addall').html('');
+	
+	
+	jQuery('#tbl &gt; tbody  &gt; tr').each(function() {
+	if (jQuery(this).find('a.grey').length &gt; 0)
+		jQuery(this).find('.green').addClass('orange').attr('title', 'Mapping available, but breakdown cannot be mapped to some other indicators. Consider removing!');
+
+	});
+	
+	
+	
+}
+
+function addAll() {
+	jQuery('a.blue').each(function (el) {
+		$(this).click();
+	});
+}
+
+//not using a library &gt; vanilla...
+function cellTemplate(dataid, content, cssclass) {
+	cssclass = cssclass || '';
+	return "&lt;td id='td-" + dataid + "' class='" + cssclass + "'&gt;" + content + "&lt;/td&gt;";
+}
+
+function hcellTemplate(dataid, content, cssclass) {
+	cssclass = cssclass || '';
+	return "&lt;th id='th-" + dataid + "' class='" + cssclass + "'&gt;" + content + "&lt;/th&gt;";
+}
+
+function rowTemplate(dataid, content, cssclass) {
+	cssclass = cssclass || '';
+	return "&lt;tr id='tr-" + dataid + "' class='" + cssclass + "'&gt;" + content + "&lt;/tr&gt;";
+}
+
+function createTable() {
+	//Create header row and cells
+	var row = hcellTemplate('breakdowns', 'Breakdowns', 'columnone');
+	for (var ind of data.indicators.ordered) {
+		
+		var star = '';
+		if (data.indicators[ind].parent)
+			star = '&lt;span title="Originating indicator" style="color:#FFD700" class="icon icon-star"&gt;&lt;/span&gt; ';
+		row += hcellTemplate(ind, star + '&lt;a href="/pa_indicators.do?sys_id=' + ind +
+			'" target="ind"&gt;' + data.indicators[ind].name + '&lt;/a&gt;&lt;br /&gt;&lt;span class="smaller"&gt;'
+			+ data.indicators[ind].type + ' &lt;i&gt;' + data.indicators[ind].facts_table + '&lt;/i&gt;&lt;/span&gt;');
+	}
+	jQuery('#tbl thead').append(rowTemplate('header', row));
+
+	//create breakdown rows and cells
+	var tbl = '';
+	for (var i = 0; i &lt; data.breakdowns.ordered.length; i++) {
+
+		var facts_tables = data.breakdowns[data.breakdowns.ordered[i]].facts_tables;
+
+		row = cellTemplate(data.breakdowns.ordered[i], '&lt;a href="/pa_breakdowns.do?sys_id='
+			+ data.breakdowns.ordered[i] + '" target="bd"&gt;'
+			+ data.breakdowns[data.breakdowns.ordered[i]].name + '&lt;/a&gt;&lt;br /&gt;&lt;span title="Mappings: '+ facts_tables.toString() +'" class="smaller"&gt;'
+			+ data.breakdowns[data.breakdowns.ordered[i]].breakdown_source + '&lt;/span&gt;');
+		for (ind of data.indicators.ordered) {
+			var clss = 'blue';
+			var ttle = 'Click to create mapping';
+			if (data.indicators[ind].type == 'Automated' &amp;&amp; canBeMapped(data.indicators[ind].facts_tables, facts_tables)) {
+				clss = 'grey';
+				ttle = 'Mapping not possible Breakdown can only be mapped to table(s): ' + facts_tables.toString();
+			}
+
+			var hrf = '#';
+			if (clss == 'blue')
+				hrf = 'javascript:addMapping(\'' + ind + '\',\'' + data.breakdowns.ordered[i] + '\',' + ((i + 1) * 100) + ')';
+			row += cellTemplate(ind + '-' + data.breakdowns.ordered[i],
+				'&lt;a class="' + clss + '" title="' + ttle + '" href="' + hrf + '"&gt;&lt;span class="' + clss + ' icon icon-add-circle"&gt;&lt;/span&gt;&lt;/a&gt;',
+				'tdcontent');
+		}
+		tbl += rowTemplate('row-' + data.breakdowns.ordered[i], row);
+	}
+	jQuery('#tbl tbody').append(tbl);
+
+}
+
+function canBeMapped(fact_tables_ind, fact_tables_bd){
+	var valid = true;
+	for (var i = 0; i &lt; fact_tables_ind.length; i++){
+	if (fact_tables_bd.indexOf(fact_tables_ind[i]) &gt; -1)
+		valid = false;
+	}
+	return valid;
+}
+
+function checkMappings() {
+	for (var ind of data.indicators.ordered) {
+		var ind_bds = data.indicators[ind].ind_bds;
+		for (var ind_bd in ind_bds) {
+			jQuery('#td-' + ind + '-' + ind_bds[ind_bd].breakdown).
+				html('&lt;span title="Mapping is available" class="green icon icon-success-circle"&gt;&lt;/span&gt;');
+		}
+	}
+}
+
+jQuery(function () {
+	jQuery.getJSON("/pa_ind_bds_json.do?action=getjson&amp;indicator=" + indicator,
+		function (resp) {
+			data = resp;
+			createTable();
+			checkMappings();
+			updateHyperlink();
+		});
+});]]&gt;&lt;/client_script&gt;&lt;description/&gt;&lt;direct&gt;false&lt;/direct&gt;&lt;endpoint/&gt;&lt;html&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null"&gt;
+    &lt;style&gt;
+		.tdcontent {text-align:center;}
+		.blue {font-size:18px; color:#278efc;}
+		.green {font-size:18px; color:#04d304;}
+		.grey {font-size:18px; color:#CCCCCC;}
+		.orange {font-size:18px; color:#ff9523 !important;}
+		.smaller {font-size:9pt; color:#CCC;}
+	&lt;/style&gt;
+	&lt;div id="addall"&gt;&lt;/div&gt;
+	&lt;table  class="table table-striped table-bordered" id="tbl"&gt;
+        &lt;thead&gt;&lt;/thead&gt;
+        &lt;tbody&gt;&lt;/tbody&gt;
+    &lt;/table&gt;
+
+&lt;/j:jelly&gt;]]&gt;&lt;/html&gt;&lt;name&gt;ind_bds&lt;/name&gt;&lt;processing_script/&gt;&lt;sys_class_name&gt;sys_ui_page&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Arnoud.Kooi&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-08-16 20:12:46&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;8ff17db24f240b009881c5c18110c774&lt;/sys_id&gt;&lt;sys_mod_count&gt;67&lt;/sys_mod_count&gt;&lt;sys_name&gt;ind_bds&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_page_8ff17db24f240b009881c5c18110c774&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Arnoud.Kooi&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-08-21 12:21:26&lt;/sys_updated_on&gt;&lt;/sys_ui_page&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1674249341</payload_hash>
+<remote_update_set display_value="PA - UI Action Utils">bb76a76c1b37f050ba6a437cbc4bcb86</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>arnoud.kooi</sys_created_by>
+<sys_created_on>2021-11-10 15:31:23</sys_created_on>
+<sys_id>3776a76c1b37f050ba6a437cbc4bcb8b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15e04bd95210000001</sys_recorded_at>
+<sys_updated_by>arnoud.kooi</sys_updated_by>
+<sys_updated_on>2021-11-10 15:31:23</sys_updated_on>
+<table/>
+<target_name>ind_bds</target_name>
+<type>UI Page</type>
+<update_domain>global</update_domain>
+<update_guid>f67739987cbc8b000b7069035b3f1567</update_guid>
+<update_guid_history>f67739987cbc8b000b7069035b3f1567:1674249341,1e04315878bc8b00fcddff490c0e058b:-30536523,7c93b15802bc8b00b6e370142159e819:1156223844,fea6799fbca04b008b51c989dd4c258c:-314120370,4776399f1ba04b002d9268ccf48ac223:-176338884,12b1b59bfda04b0053e59900db923891:442488277,f47179d79ea04b00da9d064891e4fb4f:1406173920,b2ee6d971ba04b00d56e4adb605863b3:-340970877,657ee51bbba04b00d89e05c79b249c41:511710029,231de51b19a04b005b4d456042812c3c:1230119675,7750590362e80b00faab9835eb25e233:-1482020164,e735818b6fa80b0003c7ba36dbfa5457:1041448588,ebb4014be7a80b00992c9c857e84626a:1397602900,29bc3c47c8a80b00c422adf212ec8a8a:1225439358,5fdab447efa80b007053a51a62ffcdef:-2036090167,464ab447dea80b00b5e29acad56fe3e8:-1867047883,944a3007e2a80b000c69396d025ba0a4:-1631219686,7e97b48310a80b00a8201bb3cea78566:406761175,d316b48302a80b000ed85a364c81f262:-1111332980,2665b00332a80b00e2e7f85ed7a3af39:66437972,bc25f003a6a80b00e9eb90ca18af7dba:640869539,e583b043a5a80b0059fd0fa76b17ac6d:1119815723,2f533c4368a80b00c047a92e793749a3:1433274044,d2d2b04316a80b00f29deeeacd83f37d:1494255953,e0a2b0438fa80b0075f52b0fe2bd917a:-1947307806,9552b043dca80b00f9131566d58e9b76:-1080319850,54aca08f9b680b000d6e1a3a037541c7:-1134386399,7957a4cb01680b00ef09f4860987329c:188110718,e4276ccbe1680b00440cdea8ffb43ecf:1713679949,41966ccbe3680b0076d9a59aab819fcb:788079834,f2f5200f38680b0066eb60d391703abf:370911529,9cc5a00f62680b00b5d4b28137094562:1451761886,7115e84b70680b001e54fe5266228191:675272478,1b54e2b23ea40b000b2bf604a4146c0c:-170829970,cfa322b2f5a40b0047d2b08bc66c1181:980898326,4963ea7224a40b009e20b4a280fdb1b5:-1839111231,1bc12e3208a40b00c63d5894fa4e6f10:1022801543,55945236c0640b00112b8a8a634ae123:-963015304,09345ef2d9640b00c259b8bd8d6576b4:-1172910978,fbc29eb291640b0035e51d7251366dd5:-1432630733,00cd0e3ebf240b00759d1b11595b7165:418749065,a29c42fecc240b004fd0292ad7f822f7:-1259171338,18290e3e35240b008a3077463f628e94:-1941936223,f747ca3ea0240b00e1998c9533331219:-1210233118,9a278a3e52240b00490c3e71b0178af1:771400002,9de68afae5240b0045cf57255f795f8c:-85317093,9d440abaef240b00d6a040572114a33f:-395671587,df134ebad7240b008184965052786c67:-730006521,0ba20ababa240b004f35796d315a6038:690199715,fd528e7aa8240b00cde467855402cacf:79693901,b6f102ba5a240b006977d7b127dae22f:1344351933,8c418e7a3e240b006b9dd22995d7c0d8:1823066206,74110e7acb240b00918e5eb114d44dd1:-745348724,ded0c67a68240b0092ce8accc9934ada:-457008424,cbb0827a27240b00a2097075952d5948:420240940,1430827ad6240b00c4bc0f3e33ef8845:1841919985,96bf317afd240b0046c49dadd023b25e:1009970199,4cfebdf65e240b007ba92b0ed4cafd33:-124232302,766dbdf6bd240b00f90fc604dedc1504:-881566652,4f1d7db676240b00b2d804b0bf796a8d:1556810384,990bf9b604240b001d80aa0bb6a8ca06:-1401707848,81da7db66a240b00af9152b16c899a47:2104869653,1a7ab9b646240b00c7068fbf887910d8:109037038,55367136aa240b0056418625290a9697:1613986034,36f571368a240b00ebec04c309f60393:1387279587,8265713667240b00237f8ba8c4dfa18f:-990824753,ced3b9f24c240b000b056267c8bc9350:805602982,ea637db2d0240b007338a7c80a968679:-636135308</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_processor_4066f9364f240b009881c5c18110c777</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_processor"&gt;&lt;sys_processor action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;description&gt;Used by UI Action to asses Formula Breakdowns&lt;/description&gt;&lt;interactive&gt;false&lt;/interactive&gt;&lt;name&gt;pa_ind_bds_json&lt;/name&gt;&lt;parameters/&gt;&lt;params_endpoint/&gt;&lt;path&gt;pa_ind_bds_json&lt;/path&gt;&lt;path_endpoint/&gt;&lt;require_csrf&gt;false&lt;/require_csrf&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function process(g_request, g_response, g_processor) {
+	//created by Arnoud
+	var action = g_request.getParameter("action");
+	var indicator = g_request.getParameter("indicator");
+	var breakdown = g_request.getParameter("breakdown");
+	var order = g_request.getParameter("order");
+
+	if (action == "getjson")
+		if (indicator)
+			g_processor.writeOutput("application/json", GetIndicatorAndNames(indicator));
+	if (action == "addmapping")
+		g_processor.writeOutput(addMapping(indicator, breakdown, order));
+
+})(g_request, g_response, g_processor);
+
+function addMapping(indicator, breakdown, order) {
+	var gr = new GlideRecord('pa_indicator_breakdowns');
+	gr.initialize();
+	gr.setValue('indicator', indicator);
+	gr.setValue('breakdown', breakdown);
+	gr.setValue('order', order);
+	gr.setValue('display', true);
+	return gr.insert() || 'invalid';
+}
+
+function GetIndicatorAndNames(ind) {
+	var obj = {};
+	obj.indicators = {};
+	obj.breakdowns = {};
+	var inds = pahelper.getContainingIndicators(ind, true);
+	var gr = new GlideRecord('pa_indicators');
+	gr.addQuery("sys_id", inds);
+	gr.query();
+	while (gr.next()) {
+		var ind_sys_id = gr.getValue('sys_id');
+		var ibds = GetIndicatorBreakDowns(ind_sys_id);
+		obj.indicators['ordered'] = inds;
+		obj.indicators[ind_sys_id] = {};
+		obj.indicators[ind_sys_id].parent = (ind_sys_id == ind);
+		obj.indicators[ind_sys_id].type = gr.getDisplayValue('type');
+		obj.indicators[ind_sys_id].name = gr.getValue('name');
+		obj.indicators[ind_sys_id].facts_table = '' + gr.cube.facts_table;
+		obj.indicators[ind_sys_id].facts_tables = pahelper.getTables('' + gr.cube.facts_table);
+		obj.indicators[ind_sys_id].ind_bds = ibds;
+
+		obj.breakdowns['ordered'] = [];
+		for (var ibd in ibds) {
+			var sid = ibds[ibd].breakdown;
+			obj.breakdowns[sid] = {};
+			obj.breakdowns[sid]['name'] = ibds[ibd].name;
+			obj.breakdowns[sid]['breakdown_source'] = ibds[ibd].breakdown_source;
+			obj.breakdowns[sid]['breakdown_source_sys_id'] = ibds[ibd].breakdown_source_sys_id;
+		}
+	}
+
+	//tedious way to sort breakdowns by name...
+	var bdSorted = []; for(var bd in obj.breakdowns) bdSorted.push(bd) ;
+	var bds = new GlideRecord('pa_breakdowns');
+	bds.addQuery("sys_id", bdSorted);
+	bds.orderBy('name');
+	bds.query();
+	while (bds.next()) {
+		obj.breakdowns['ordered'].push(bds.getValue('sys_id'));
+	}
+
+	var bdFactsTables = GetIndicatorBreakDownMappingTables(bdSorted);
+	for (var bdFactsTable in bdFactsTables){
+		obj.breakdowns[bdFactsTable]['facts_tables'] = bdFactsTables[bdFactsTable];
+	}
+
+	return JSON.stringify(obj);
+}
+
+function GetIndicatorBreakDownMappingTables(bds) {
+	var gr = new GlideRecord('pa_breakdown_mappings');
+	gr.addQuery("breakdown", bds);
+	gr.orderBy("breakdown");
+	gr.query();
+	var bdFactsTables = {};
+	var bd = "";
+	while (gr.next()) {
+		if (bd != gr.getValue("breakdown")) {
+			bd = gr.getValue("breakdown");
+			bdFactsTables[bd] = [];
+		}
+		bdFactsTables[bd].push(gr.getValue("facts_table"));
+	}
+	return bdFactsTables;
+}
+
+
+function GetIndicatorBreakDowns(ind) {
+	var gr = new GlideRecord('pa_indicator_breakdowns');
+	gr.addQuery("indicator", ind);
+	gr.query();
+	var arr = [];
+	while (gr.next()) {
+		var ibd = {};
+		ibd.sys_id = gr.getValue('sys_id');
+		ibd.breakdown = gr.getValue('breakdown');
+		ibd.breakdown_source = gr.breakdown.dimension.getDisplayValue();
+		ibd.breakdown_source_sys_id = gr.breakdown.dimension.getValue();
+		ibd.name = gr.getDisplayValue('breakdown');
+		ibd.order = gr.getValue('order');
+		arr.push(ibd);
+	}
+	return arr;
+}
+
+
+
+
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_processor&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Arnoud.Kooi&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-08-16 20:25:43&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;4066f9364f240b009881c5c18110c777&lt;/sys_id&gt;&lt;sys_mod_count&gt;30&lt;/sys_mod_count&gt;&lt;sys_name&gt;pa_ind_bds_json&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_processor_4066f9364f240b009881c5c18110c777&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Arnoud.Kooi&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-08-22 08:41:46&lt;/sys_updated_on&gt;&lt;type&gt;script&lt;/type&gt;&lt;/sys_processor&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-570690528</payload_hash>
+<remote_update_set display_value="PA - UI Action Utils">bb76a76c1b37f050ba6a437cbc4bcb86</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>arnoud.kooi</sys_created_by>
+<sys_created_on>2021-11-10 15:31:23</sys_created_on>
+<sys_id>3b76a76c1b37f050ba6a437cbc4bcb87</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15e091ad4a80000001</sys_recorded_at>
+<sys_updated_by>arnoud.kooi</sys_updated_by>
+<sys_updated_on>2021-11-10 15:31:23</sys_updated_on>
+<table/>
+<target_name>pa_ind_bds_json</target_name>
+<type>Processor</type>
+<update_domain>global</update_domain>
+<update_guid>518c3e36253583009c55cc2e0ad72c1f</update_guid>
+<update_guid_history>518c3e36253583009c55cc2e0ad72c1f:-570690528,20051bb3a259470060c7289e4afcf7f6:289974244,9160d7bfcd194700d3853d43c17e748e:-711318975,7e0a877f66194700748aa1254359d1b4:993706624,0eb98f3fd8194700d7e3e9e94bd42e56:1353347240,c238cffbb9194700fe2c8b2f6a7bda46:-1437333349,0f650fbb4c194700cd2270e6cc212003:1008241979,1f88fe37021947002cfc90ea58a4c424:1124249817,9f583e378f19470007c159539d3bf669:-1810095827,b3083e37c319470063749982f167fe6e:-955088533,c1083a37781947001af8403b8d59c630:2074096445,4e77bef3f91947002968208c047738d7:727087803,77467ef36619470065b9b3a99733a25d:1318084680,27e5f2f3381947004bd691df0b38cb66:-22170520,7174beb3031947005a01710200bbff27:1297873771,d654fe73d719470052f97cb846f0a7d3:1165670514,1762ba73ea19470073a7acc3843b81a9:-1042730716,fece8ee093b4cb003dc55c206a72776b:-570690528,5b90391828bc8b009c721856f13572a6:-2065144148,2b50b51844bc8b0047b5e0fc699ece20:888542983,7a4589dcc13c8b00964c89126a73c1bc:542981989,9fb1e2d314244b0099e4cd460df49254:1700216523,bbff255b38a04b0054561e9766afe903:1565373998,023c6dd769a04b00b7a7e21eea9118aa:-284126251,558badd786a04b008823210e109c3cb8:2006330090,aeda2dd773a04b00cb0ffb07ea6e4ef8:1598946005,7878e19714a04b001c55171353eab8c4:-1579741323,a7d7e197dda04b00ca1c7a8f2438de83:-1751905523,1d6e2c8f76680b008c2357b0f00223d3:-1144922157,9f2eac4f11680b0027063c04d300aa0e:-883908748,19db6ccb88680b00fa34e466dd7ce648:-878953712,bf7ba08fe3680b00d41391edeca927c1:-1373161504,aed96ccbad680b003830dfc89a244542:1911966802,cb7560cb2b680b00de967271225a0dd6:-1267049991,ba24e44b95680b0096a1d08354c99e0b:1546575472,508360cb44680b00c5b4aab0992f69d3:-491366121,55b2e44b07680b008f6dd5904d046507:-94340281,2ebd9cc70e680b00d07edbf18c94d60d:-930938246,2f21e23274a40b00d5d0eef5dee4070a:392216647,3ca0663277a40b0035789b1b41990f0a:-1451109805,5d66463eb8240b00d314b8eb48daaa36:-480496242,ecf7f576b9240b00bec080f71dbd62ad:-268658128,f5c7f5768c240b002283190fe8e8fc82:371995897,a397357667240b0052da9b928933817c:302418108,5497f17631240b003c1db21cfb37b300:675191991,2567b93653240b00b04be40b9f1205ba:-282026800,f317b93666240b009e8042a5a0bd46b2:-1900055749,0466f93687240b008a72efb734adb078:1901665993</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_bb4534fb4f5e220074570ab18110c763</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;Set Conditions from Clipboard&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;true&lt;/client&gt;&lt;comments&gt;Open the list of used indicators in a Formula Indicator in a list&amp;#13;
+&amp;#13;
+Part of PA - UI Action Utils by Arnoud Kooi&lt;/comments&gt;&lt;condition&gt;!current.isNewRecord() &amp;amp;&amp;amp; current.type == 2&lt;/condition&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;false&lt;/form_button&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;true&lt;/form_link&gt;&lt;form_style/&gt;&lt;hint&gt;Opens the list of used indicators in a Formula Indicator in a list&lt;/hint&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;name&gt;View used Indicators in List&lt;/name&gt;&lt;onclick&gt;viewIndicators();&lt;/onclick&gt;&lt;order&gt;1&lt;/order&gt;&lt;script&gt;&lt;![CDATA[function viewIndicators(){
+	window.open('/pa_indicators_list.do?sysparm_query=sys_id=javascript:pahelper.getContainingIndicators("' + g_form.getUniqueValue() + '")','indicators');
+}]]&gt;&lt;/script&gt;&lt;show_insert&gt;false&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Arnoud.Kooi_SHARE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-10-10 10:00:00&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;bb4534fb4f5e220074570ab18110c763&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_name&gt;View used Indicators in List&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_bb4534fb4f5e220074570ab18110c763&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Arnoud.Kooi&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-08-18 09:31:19&lt;/sys_updated_on&gt;&lt;table&gt;pa_indicators&lt;/table&gt;&lt;ui11_compatible&gt;false&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1795855232</payload_hash>
+<remote_update_set display_value="PA - UI Action Utils">bb76a76c1b37f050ba6a437cbc4bcb86</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>arnoud.kooi</sys_created_by>
+<sys_created_on>2021-11-10 15:31:23</sys_created_on>
+<sys_id>3b76a76c1b37f050ba6a437cbc4bcb8a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15e03f6db930000001</sys_recorded_at>
+<sys_updated_by>arnoud.kooi</sys_updated_by>
+<sys_updated_on>2021-11-10 15:31:23</sys_updated_on>
+<table>pa_indicators</table>
+<target_name>View used Indicators in List</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid>d3c50d90c77c8b0047a1a8f3bdd70527</update_guid>
+<update_guid_history>d3c50d90c77c8b0047a1a8f3bdd70527:-1795855232,e5c37d1f02a04b0084de9e162c18314a:-1795855232,494b26b526a88700ff4dc790fdfc96e7:1229270002,a51ba2b511a8870055421bf6450cabeb:1147222826,-163965776:-163965776</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_5487ec3b4f5e220074570ab18110c7af</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;Set Conditions from Clipboard&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;true&lt;/client&gt;&lt;comments&gt;Open a new tab with the current condition, included with the condition of the Indicator Source &amp;#13;
+&amp;#13;
+Part of PA - UI Action Utils by Arnoud Kooi&lt;/comments&gt;&lt;condition/&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;false&lt;/form_button&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;true&lt;/form_link&gt;&lt;hint&gt;Open a new tab with the current condition, included with the condition of the Indicator Source &lt;/hint&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;name&gt;Set Conditions from Clipboard&lt;/name&gt;&lt;onclick&gt;setconditions();&lt;/onclick&gt;&lt;order&gt;40&lt;/order&gt;&lt;script&gt;&lt;![CDATA[function setconditions(){
+	var conditionsOld = g_form.getValue('conditions');
+	var conditionsNew = prompt("Paste query", conditionsOld);
+	if (conditionsNew !== null)
+		g_form.setValue('conditions',conditionsNew);
+}
+]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Arnoud.Kooi_SHARE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-10-10 10:00:00&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;5487ec3b4f5e220074570ab18110c7af&lt;/sys_id&gt;&lt;sys_mod_count&gt;9&lt;/sys_mod_count&gt;&lt;sys_name&gt;Set Conditions from Clipboard&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_5487ec3b4f5e220074570ab18110c7af&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Arnoud.Kooi_SHARE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-11-18 21:00:46&lt;/sys_updated_on&gt;&lt;table&gt;pa_cubes&lt;/table&gt;&lt;ui11_compatible&gt;false&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash/>
+<remote_update_set display_value="PA - UI Action Utils">bb76a76c1b37f050ba6a437cbc4bcb86</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>arnoud.kooi</sys_created_by>
+<sys_created_on>2021-11-10 15:31:23</sys_created_on>
+<sys_id>3f76a76c1b37f050ba6a437cbc4bcb89</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15c8cd77b180000000</sys_recorded_at>
+<sys_updated_by>arnoud.kooi</sys_updated_by>
+<sys_updated_on>2021-11-10 15:31:23</sys_updated_on>
+<table>pa_cubes</table>
+<target_name>Set Conditions from Clipboard</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_relationship_6df421394f2887009881c5c18110c7ec</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_relationship"&gt;&lt;sys_relationship action="INSERT_OR_UPDATE"&gt;&lt;advanced&gt;false&lt;/advanced&gt;&lt;apply_to/&gt;&lt;basic_apply_to&gt;pa_indicators&lt;/basic_apply_to&gt;&lt;basic_query_from&gt;pa_indicators&lt;/basic_query_from&gt;&lt;insert_callback/&gt;&lt;name&gt;Used in Formula&lt;/name&gt;&lt;query_from/&gt;&lt;query_with&gt;&lt;![CDATA[(function refineQuery(current, parent) {
+
+current.addQuery('formula','CONTAINS', parent.getValue('sys_id'));
+
+})(current, parent);]]&gt;&lt;/query_with&gt;&lt;reference_field&gt;sys_scope&lt;/reference_field&gt;&lt;related_list/&gt;&lt;simple_reference&gt;false&lt;/simple_reference&gt;&lt;sys_class_name&gt;sys_relationship&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-08-13 16:35:43&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;6df421394f2887009881c5c18110c7ec&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Used in Formula&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_relationship_6df421394f2887009881c5c18110c7ec&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-08-13 16:35:43&lt;/sys_updated_on&gt;&lt;/sys_relationship&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=6df421394f2887009881c5c18110c7ec"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>32242783</payload_hash>
+<remote_update_set display_value="PA - UI Action Utils">bb76a76c1b37f050ba6a437cbc4bcb86</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>arnoud.kooi</sys_created_by>
+<sys_created_on>2021-11-10 15:31:23</sys_created_on>
+<sys_id>7376a76c1b37f050ba6a437cbc4bcb88</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15e040205520000001</sys_recorded_at>
+<sys_updated_by>arnoud.kooi</sys_updated_by>
+<sys_updated_on>2021-11-10 15:31:23</sys_updated_on>
+<table/>
+<target_name>Used in Formula</target_name>
+<type>Relationship</type>
+<update_domain>global</update_domain>
+<update_guid>fd98c114067c8b00b2d50129def8cd7f</update_guid>
+<update_guid_history>fd98c114067c8b00b2d50129def8cd7f:32242783,adf42139e32887004e29b2f88dd1e8ed:32242783</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_page_8d9e22d74f244b009881c5c18110c7ec</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_page"&gt;&lt;sys_ui_page action="INSERT_OR_UPDATE"&gt;&lt;category&gt;general&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[var data = {};
+var indicator = "${sysparm_indicator}";
+
+
+jQuery(function () {
+	restCall('pa_bd_exclusion_json.do?action=getjson&amp;indicator=' + indicator).done(function (res) {
+		createTable(res);
+
+	});
+});
+
+function createTable(data) {
+	//Create header row and cells
+	var row = hcellTemplate('bdm11', '&lt;/span&gt;&lt;span id="countDetails" /&gt;', 'tdcontent');
+	row += hcellTemplate('bdm12', '&lt;span id="spnLoading" class="icon icon-loading"&gt;', 'tdcontent');
+	for (var i = 0; i &lt; data.order.length - 1; i++) {
+		row += hcellTemplate('1-' + data.order[i], '&lt;span class="vertical"&gt;&lt;a href="/pa_breakdowns.do?sys_id=' + data.order[i] +
+			'" target="bd"&gt;' + data[data.order[i]].name + '&lt;/a&gt;&lt;/span&gt;');
+	}
+	jQuery('#tbl thead').append(rowTemplate('header1', row));
+	row = hcellTemplate('bdm21' + i, 'Breakdown Matrix', 'columnone');
+	row += hcellTemplate('bdm22' + i, '#', 'tdcontent grey');
+	for (i = 0; i &lt; data.order.length - 1; i++) {
+		row += hcellTemplate('2-' + data.order[i], data[data.order[i]].count, 'tdcontent grey');
+	}
+	jQuery('#tbl thead').append(rowTemplate('header2', row));
+
+	//create breakdown rows and cells
+	var tbl = '';
+	for (i = 0; i &lt; data.order.length; i++) {
+
+		row = cellTemplate(data.order[i], '&lt;a href="/pa_breakdowns.do?sys_id=' + data.order[i] +
+			'" target="bd"&gt;' + data[data.order[i]].name + '&lt;/a&gt;', data[data.order[i]].count);
+		row += cellTemplate('', data[data.order[i]].count, 'tdcontent grey');
+		var doRender = true;
+		for (var j = 0; j &lt; data.order.length - 1; j++) {
+
+			if (data.order[i] == data.order[j]) doRender = false;
+			var sid = 'spn-' + data.order[i] + '-' + data.order[j];
+			var render = '';
+			if (doRender) {
+				var clss = '';
+				var exclude = (data[data.order[i]].exclusions.indexOf(data.order[j]) &gt; -1);
+				if (exclude) clss = 'exclude';
+				render = '&lt;span class="toggle ' + clss + '" id="' + sid + '"&gt;' +
+					data[data.order[i]].count * data[data.order[j]].count + '&lt;/span&gt;';
+			}
+			row += cellTemplate('td' + data.order[i] + '-' + data.order[j], render, 'tdcontent');
+		}
+		tbl += rowTemplate('row-' + data.order[i], row);
+	}
+	jQuery('#tbl tbody').append(tbl);
+	jQuery('#tbl .toggle').on('click', function () {
+		toggleExclusion(jQuery(this).attr("id"));
+	});
+	countMatrix();
+}
+
+function countMatrix() {
+
+	var totalcount = 0;
+	var excludecount = 0;
+
+	jQuery('td .toggle').each(function () {
+		totalcount += parseInt(this.innerText);
+	});
+
+	jQuery('td .exclude').each(function () {
+		excludecount += parseInt(this.innerText);
+	});
+
+	var collectcount = totalcount - excludecount;
+	var saved = parseInt((excludecount) / (totalcount+1) *100);
+	
+	var html = 'Estimation:&lt;br /&gt;Total: ' + totalcount +
+		'&lt;br /&gt;Excluded: ' + excludecount +
+		'&lt;br /&gt;Collected: ' + collectcount +
+		'&lt;br /&gt;Saved: ' + saved + '%';
+
+	jQuery('#countDetails').html(html);
+	jQuery('#spnLoading').hide();
+
+}
+
+function toggleExclusion(id) {
+	jQuery('#spnLoading').show();
+	
+	var bds = id.split('-');
+
+	restCall('pa_bd_exclusion_json.do?action=toggleexclusion&amp;indicator=' + indicator +
+		'&amp;bd1=' + bds[1] + '&amp;bd2=' + bds[2]).done(function (exclude) {
+
+			if (exclude === 'false')
+				jQuery('#' + id).removeClass('exclude');
+			else
+				jQuery('#' + id).addClass('exclude');
+			GlideList2
+				.get('pa_indicators.pa_indicator_breakdown_excl.indicator')
+				.setFilterAndRefresh('');
+			countMatrix();
+		});
+}
+
+
+//not using a library &gt; vanilla...
+function hcellTemplate(dataid, content, cssclass) {
+	cssclass = cssclass || '';
+	return "&lt;th id='th-" + dataid + "' class='" + cssclass + "'&gt;" + content + "&lt;/th&gt;";
+}
+
+function cellTemplate(dataid, content, cssclass) {
+	cssclass = cssclass || '';
+	return "&lt;td id='td-" + dataid + "' class='" + cssclass + "'&gt;" + content + "&lt;/td&gt;";
+}
+
+function rowTemplate(dataid, content, cssclass) {
+	cssclass = cssclass || '';
+	return "&lt;tr id='tr-" + dataid + "' class='" + cssclass + "'&gt;" + content + "&lt;/tr&gt;";
+}
+
+
+function restCall(url) {
+	var hdrs = {
+		'Cache-Control': 'no-cache',
+		'Accept': 'application/json',
+		'Content-Type': 'application/json'
+	};
+	if (g_ck) //only for instances with high security plugin enabled
+		hdrs['X-UserToken'] = g_ck;
+
+	respObj = jQuery.ajax({
+		url: url,
+		method: 'GET',
+		headers: hdrs
+	});
+	return respObj;
+}]]&gt;&lt;/client_script&gt;&lt;description/&gt;&lt;direct&gt;false&lt;/direct&gt;&lt;endpoint/&gt;&lt;html&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null"&gt;
+    &lt;style&gt;
+		.tdcontent {text-align:right; font-size:8pt;
+		font-family: "Lucida Console", Monaco, monospace;}
+		.exclude {color:#FF3366; text-decoration: line-through;}
+		.grey {color:#bdc0c4 !important;}
+		.vertical {writing-mode:vertical-rl} 
+		.toggle{cursor:pointer; }
+		#tr-header {height:100px;}
+	&lt;/style&gt;
+	
+	&lt;table  class="table table-striped table-bordered" id="tbl"&gt;
+        &lt;thead&gt;&lt;/thead&gt;
+		&lt;tbody&gt;&lt;/tbody&gt;
+    &lt;/table&gt;
+
+&lt;/j:jelly&gt;]]&gt;&lt;/html&gt;&lt;name&gt;ind_bd_exclusion&lt;/name&gt;&lt;processing_script/&gt;&lt;sys_class_name&gt;sys_ui_page&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-08-18 13:48:14&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;8d9e22d74f244b009881c5c18110c7ec&lt;/sys_id&gt;&lt;sys_mod_count&gt;96&lt;/sys_mod_count&gt;&lt;sys_name&gt;ind_bd_exclusion&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_page_8d9e22d74f244b009881c5c18110c7ec&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Arnoud.Kooi&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-08-20 20:39:01&lt;/sys_updated_on&gt;&lt;/sys_ui_page&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-2035263708</payload_hash>
+<remote_update_set display_value="PA - UI Action Utils">bb76a76c1b37f050ba6a437cbc4bcb86</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>arnoud.kooi</sys_created_by>
+<sys_created_on>2021-11-10 15:31:23</sys_created_on>
+<sys_id>7376a76c1b37f050ba6a437cbc4bcb8b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15e03f56d530000001</sys_recorded_at>
+<sys_updated_by>arnoud.kooi</sys_updated_by>
+<sys_updated_on>2021-11-10 15:31:23</sys_updated_on>
+<table/>
+<target_name>ind_bd_exclusion</target_name>
+<type>UI Page</type>
+<update_domain>global</update_domain>
+<update_guid>54754590e77c8b00d67bf8bb9f607197</update_guid>
+<update_guid_history>54754590e77c8b00d67bf8bb9f607197:-2035263708,fdcf5e0c00388b003dac17e0c16505ad:-2035263708,1801110ce4b48b00bf48237dd5b832b3:-2119448539,7c8e45c8ddb48b005ad8898a121fdad7:-935438877,205ec1c8f9b48b00df4c860e5f2dbdbb:1738360159,6b0dc1c8f0b48b00d6ea7e7ca70ea988:-832891151,48ec4d88acb48b005da16214d4304707:-1887996018,18cc0d8844b48b000fa4ce777348e9c2:562472753,cc0c0d8874b48b003ab6bec2f0282fbd:1458223513,bfcb0988a6b48b00caf570ba1682c5e2:-398394176,857b45888db48b00a7bf4a6b64cea70e:-1447163609,abea018887b48b0053664e6e0579ebe8:526546443,5c6a4d48b5b48b009edd4b4f5534f422:-2029653427,0689c54801b48b00ca5c0be5bf35a53f:-683011961,4a29c548e6b48b0099acacc51f0ffc37:1251502527,c79881482cb48b0061284a01e26f72fa:-1478142322,c5988148eab48b00b4889a93f5bf82cc:1288712591,77584d089cb48b00329cdc3e711069c4:1745589586,88f7810889b48b001dadd3b62ca7c183:351346171,92274dc4fbb48b00a018e979fd6f9625:1099891116,4ce6c184eab48b00f3894d911e0fa369:-1427360550,0a360108d2b48b00064a833c46147bb3:-1016441788,2be5c184d5b48b005b488f5901f7cd2d:64901220,3471cd44e1b48b0011770f6e9d1a0df1:1015387657,2ff0894496b48b00ee2dc3f8ebe6a090:-1351417699,64a0854459b48b00907ff93744a0866a:1835934781,6c0005442bb48b0049639b47b1055193:-222508480,65bfbc0405b48b0061afd537036597cb:1974156407,8eeef00416b48b006f7509ac8345a799:-1045230077,baaeb404efb48b001256381fae5f5d93:-2143430655,1f3db8c01ab48b001759a550b2df5f7e:645280514,b21cb8c036b48b004480867a7aec0458:-1655753434,19ebb0c037b48b009cf5b28e9d066aaa:-144537776,3dbbb0c086b48b002a6d99cb097bf4a1:1794341662,ea9ab040cdb48b00592b3e0365ee9a75:-1094101136,55e6f44029b48b008780690f5b771d16:1893455059,8596b44020b48b009f957014451ad2cf:-784344060,d9a5bccc5d748b00a0ddf3fcf89dd7ee:-528297822,5cdf506386284b0054f457957133e060:-1586747981,444f542358284b00a60261df0572f2ae:-136773068,f778542f16e44b005097ddbc90f0e1ca:1363908178,ef4fc82bebe44b0094946035921a8065:-2064819252,23fe842b67e44b001020ce7801a0c889:1244270499,0a7e802bb1e44b006ada576f35aaea79:1089765325,7eccc0e78de44b0014b762b667a6f0dc:-572778922,b53c48a7c1e44b0056518bab0888bdc6:1089765325,2285042707e44b00c733fac6cd8a9442:-1609843921,a55500e32ae44b00439c7f499a658edb:-937855522,d7844ce3f2e44b0075f2dd6024ea8db3:791311114,8a728ca311e44b00b28d5890c99865f6:1570647095,40528ca394e44b00c6fe09bc3f67aed6:1946139427,663248a324e44b00a38e7dac772cdd55:1452957124,7fb144a35ee44b00238dd5fb2bd9c81f:666537984,b5010c23bde44b00f6f2a8ce958619a8:1038399330,e98e3f13d9e44b0028a21fddd4c60306:1938137884,a5fd3f130be44b001a659289e4d6b802:-656666577,990a539f56644b0055cb3f563a164b05:-790805382,da995f9b8d644b0040269e0e9c915e05:1781579241,f019db5fff644b008b667e195528a3f7:1990761108,d9b85f9bb2644b00ddbc3d35020fce02:-800445426,f6a71b1f2d644b00310f573623ead728:-2104966109,c5871b1fb2644b007798e6ceab2b9625:-1759440476,3e15db5b58644b002f2ba6774d1c6bf7:-1549573021,05f4df9bf9644b0016ddef660867cfba:-949592957,e794df9b90644b000a435f7da5c36db6:-1790034081,44231f9b6d644b00e74f25feb44e09fa:1696187294,2ab2d35bde644b006bf8f35ab9a35e1d:-898246525,5342179b47644b00f47c0b26f03f2f88:705469534,adf1db5b30644b00896a42bc6b9ceaf0:1364424290,48c1975b59644b00b9896bc31dcdfc8e:-468534040,d281db1b47644b00f015cde83e93547e:-207714935,3e21975b5a644b001c4f17289d8d168a:-1663162614,61f0db5b3c644b00f7e9473363dea6ed:2015158268,f5c0db1bda644b009319802305de6a7a:-199915738,9e70d35bb5644b0052d3d5712f055016:-45849892,d0fe0bd702644b0018ee1438c5f34f1a:1700262669,c38e0bd730644b00d8320aa348fcd817:1872376808,f72e07d74e644b0024e47024c3fd0738:1700262669,aa8d07d77d644b001575152342dea334:2134674705,0eac07d7a3644b009af2abb9b15abb3e:-987287173,223c07d738644b002680411d404a6b31:-435572306,2fbb875798644b000ec3503aba64bc92:123628403,2d5a07572c644b00aa5c9028c6c123ec:1452654868,8f398317fa644b0047f82b1fb39c0b35:296472886,55c703d3cd644b00f3321283da107abd:-2393828,fff40fd33c644b00bd6e470cbd7787c7:327996908,f491479352644b008ce21bcddab5d115:-1655599585,e6414f53ef644b00867460cc7e88ba6e:1197723194,d2f08f53d8644b009c9514d9024be5ae:1767591938,6280c35375644b00ee7d793c438a9177:1495271428,cadfb2df68244b005c48c4b83278fb72:-346085924,bd183e9b2b244b0033a7146bb2c89cc9:-1483430180,f4e43a1ff8244b009ce0409cc07f072b:2071506047,73a43a1f43244b004a070667c46c1726:275448761,ec74361fb8244b004d788177955abc13:394005272,f714b21f11244b00f37951b8d70e4b42:576259769,8a04b21fe5244b00921290bb23a30f05:-793140359,459e22d782244b0088621c8697f1afee:-1979449931</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_a562cf504f44cb009881c5c18110c768</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;execute&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;false&lt;/client&gt;&lt;comments/&gt;&lt;condition&gt;!current.isNewRecord() &amp;amp;&amp;amp; !current.getED().getBooleanAttribute("disable_execute_now")&lt;/condition&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_style/&gt;&lt;hint/&gt;&lt;list_action&gt;true&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;true&lt;/list_choice&gt;&lt;list_context_menu&gt;true&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;name&gt;Execute Now and Stay&lt;/name&gt;&lt;onclick/&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[current.update();
+SncTriggerSynchronizer.executeNow(current);
+action.setRedirectURL(current);]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-15 11:01:39&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;a562cf504f44cb009881c5c18110c768&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Execute Now and Stay&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_a562cf504f44cb009881c5c18110c768&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-15 11:01:39&lt;/sys_updated_on&gt;&lt;table&gt;sysauto_pa&lt;/table&gt;&lt;ui11_compatible&gt;false&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>151736392</payload_hash>
+<remote_update_set display_value="PA - UI Action Utils">bb76a76c1b37f050ba6a437cbc4bcb86</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>arnoud.kooi</sys_created_by>
+<sys_created_on>2021-11-10 15:31:23</sys_created_on>
+<sys_id>7776a76c1b37f050ba6a437cbc4bcb8a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15d45e93cca0000001</sys_recorded_at>
+<sys_updated_by>arnoud.kooi</sys_updated_by>
+<sys_updated_on>2021-11-10 15:31:23</sys_updated_on>
+<table>sysauto_pa</table>
+<target_name>Execute Now and Stay</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid>6d62cf50c044cb0006f30916ba25ec69</update_guid>
+<update_guid_history>6d62cf50c044cb0006f30916ba25ec69:151736392</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_325d51184f3f36009881c5c18110c795</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;CollectData&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;true&lt;/client&gt;&lt;comments&gt;Create and run an ad-hoc data collection job, to test your indicator&lt;/comments&gt;&lt;condition&gt;!(current.isNewRecord() &amp;amp;&amp;amp; !current.canCreate()) &amp;amp;&amp;amp; current.canWrite() &amp;amp;&amp;amp; current.type == 1&lt;/condition&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_context_menu&gt;true&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_style/&gt;&lt;hint&gt;Create and run an ad-hoc data collection job, to test your indicator&lt;/hint&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;name&gt;Collect Test Data&lt;/name&gt;&lt;onclick&gt;startCollectData()&lt;/onclick&gt;&lt;order&gt;50&lt;/order&gt;&lt;script&gt;&lt;![CDATA[function startCollectData() {
+	var opts = prompt("Collection for period\nDaysBackStart,[DaysBackEnd],[interval (d,w,m)]","30");
+	if (opts === null) return; //cancel
+	
+	var ga = new GlideAjax('PATestDataCollect');
+	ga.addParam('sysparm_name', 'startCollect');
+	ga.addParam('sysparm_options', opts);
+	ga.addParam('sysparm_indicator', g_form.getUniqueValue());
+
+	ga.getXML(CollectResponse);
+	
+	function CollectResponse(response) {
+		var answer = response.responseXML.documentElement.getAttribute("answer");
+		g_form.addInfoMessage(answer);
+	}
+	
+}
+
+
+]]&gt;&lt;/script&gt;&lt;show_insert&gt;false&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-02 17:24:30&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;325d51184f3f36009881c5c18110c795&lt;/sys_id&gt;&lt;sys_mod_count&gt;15&lt;/sys_mod_count&gt;&lt;sys_name&gt;Collect Test Data&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_325d51184f3f36009881c5c18110c795&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-13 13:09:43&lt;/sys_updated_on&gt;&lt;table&gt;pa_indicators&lt;/table&gt;&lt;ui11_compatible&gt;false&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1091380057</payload_hash>
+<remote_update_set display_value="PA - UI Action Utils">bb76a76c1b37f050ba6a437cbc4bcb86</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>arnoud.kooi</sys_created_by>
+<sys_created_on>2021-11-10 15:31:23</sys_created_on>
+<sys_id>7b76a76c1b37f050ba6a437cbc4bcb89</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15dd62f1f110000001</sys_recorded_at>
+<sys_updated_by>arnoud.kooi</sys_updated_by>
+<sys_updated_on>2021-11-10 15:31:23</sys_updated_on>
+<table>pa_indicators</table>
+<target_name>Collect Test Data</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid>6fd39b1173ac4700fe883fc67d79c247</update_guid>
+<update_guid_history>6fd39b1173ac4700fe883fc67d79c247:-1091380057,f98c4d7f9b77ba003954a6b9c79eef12:-1091380057,bc8c4d7f0d77ba00da85de4138183d93:-1577725263,2901ead8e1bf3600fe2ba146815e3774:-1091380057,907e929819bf360092c6ee0a04c59bb8:2048121351,e63eda583cbf3600458878504f25cddd:-406875108,2b789e947bbf36007aaee3c577aa566f:427745022,a146d254a0bf36002dd7ec90836fd928:-1665762301,821652549abf36007e0d61c8e43f6f5d:-875484945,49b98e9cf27f3600ead594c6e86f797e:-322098205,8db23dd0ac7f3600b9e8dc875197fe1c:-1746678654,c94271d06c7f3600e0fa37d46e030a3c:-17979084,73c1291c563f3600c37bb57b965bc318:826227216,c6a1251c0d3f36004c9ea9e645ac4e61:688844299,f941611ce83f3600f8eed2019952a0d7:904885425,5abd1198ac3f3600b87ecb2d5f0543f2:170691690,4b5d5118f83f360004244fdcd6314796:-1448950623</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_06b13b504f604b4035e0fdb28110c78b</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;tryit&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;true&lt;/client&gt;&lt;comments/&gt;&lt;condition&gt;gs.hasRole("admin") || gs.hasRole("pa_admin") &lt;/condition&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;false&lt;/form_button&gt;&lt;form_context_menu&gt;true&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_style/&gt;&lt;hint/&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;name&gt;PA Breakdown Helper&lt;/name&gt;&lt;onclick&gt;pa_analyse(false,false)&lt;/onclick&gt;&lt;order&gt;10&lt;/order&gt;&lt;script&gt;&lt;![CDATA[function pa_analyse(message, isError){
+    g_form.clearMessages();
+    jQuery('.injected').remove();
+    g_form.addInfoMessage('Mouseover &lt;span class="icon icon-workflow"&gt;&lt;/span&gt; ' + 
+    'icons, to see breakdown advice. Caution: Advanced use-cases like scripting, bucket groups and dot walking not covered');
+    if (message){
+        if (isError) g_form.addErrorMessage(message);
+        else g_form.addInfoMessage(message);
+    }
+    window.pahelped = true; 
+	jQuery.getJSON( "/pahelper.do?action=gettabledata&amp;table=" + g_form.getTableName(), function( data ) {
+        doChecks(data); 
+	}); 
+}
+
+function doChecks(data){ 
+
+    var myurl = '/api/now/ui/meta/' + g_form.getTableName();
+    restCall(myurl).done(function(jsn,statusText,jqXHR) {
+        //console.log(jsn.result);
+        window.jsn = jsn.result;
+        jQuery('[id^=element]')
+        .each(function(index, value) { 
+            var elm = jQuery(this).closest('div.form-group').attr('id').split('.').slice(2).join('.');
+            
+            var elmMeta = jsn.result.columns[elm];
+            var title = "";
+            var color = '';
+            var links = '';
+            if (elm.indexOf('.') &gt; -1){ 
+                var ref = jsn.result.columns[elm.split('.')[0]];
+                title = "Field from dot walked table " + ref.reference + " go to table, to analyse breakdown"; 
+                color = 'grey';
+            }
+            else if (elmMeta.type == 'choice'){
+                
+                title = "Field type Choice appropriate for Breakdown";
+                color = 'green'; 
+
+                var bdsCond = '';
+                var bdCond = '';
+                for (var i = 0; i &lt; data.tables.length -1; i++){
+                    bdsCond += '^ORconditionsLIKEname=' + data.tables[i];
+                    bdCond += '^ORdimension.conditionsLIKEname=' + data.tables[i];
+                }
+ 
+                var bdsUrl = '/api/now/table/pa_dimensions?sysparm_display_value=true&amp;sysparm_query=facts_table=sys_choice^conditionsLIKEelement='+ elm +'^conditionsLIKEname=' + data.tables[data.tables.length-1] + bdsCond;
+                var bdUrl = '/api/now/table/pa_breakdowns?sysparm_display_value=true&amp;sysparm_query=dimension.facts_table=sys_choice^dimension.conditionsLIKEelement='+ elm +'^dimension.conditionsLIKEname=' + data.tables[data.tables.length-1] + bdCond;
+                var bdmUrl = '/api/now/table/pa_breakdown_mappings?sysparm_display_value=true&amp;sysparm_query=facts_tableIN' + data.tables +'^field=' + elm ;
+                
+                var bdsHl = '/pa_dimensions_list.do?sysparm_query=facts_table=sys_choice^conditionsLIKEelement='+ elm +'^conditionsLIKEname=' + data.tables[data.tables.length-1] + bdsCond;
+                var bdHl = '/pa_breakdowns_list.do?sysparm_query=dimension.facts_table=sys_choice^dimension.conditionsLIKEelement='+ elm +'^dimension.conditionsLIKEname=' + data.tables[data.tables.length-1] + bdCond;
+                var bdmHl = '/pa_breakdown_mappings_list.do?sysparm_query=facts_tableIN' + data.tables +'^field=' + elm;
+
+                var bds = restCall(bdsUrl, index);
+                var bd = restCall(bdUrl, index);
+                var bdm = restCall(bdmUrl, index);
+
+                Promise.all([index,elm,title,color,bds, bd, bdm, bdsHl,bdHl,bdmHl, data.tables]).then(function(res) { 
+                     buildLinks(res);
+                });
+
+            }
+            else if (elmMeta.type == 'reference'){
+
+                if (data.tasktables.indexOf(elmMeta.reference) ==  -1){
+
+                    if (elmMeta.reference == 'cmdb_ci'){
+                        title = "Reference to CMDB CI table. Breakdown not recommended, when creating a Breakdown, add conditions to limit results to max. 500 records" ;
+                        color = 'orange';
+                    } 
+                    else if (elmMeta.reference == 'sys_user'){
+                        title = "Reference to User table. Breakdown not recommended, when creating a Breakdown, add conditions to limit results to max. 500 records" ;
+                        color = 'orange';
+                    } 
+                    else {
+                        title = "Reference to " + elmMeta.reference + ". Breakdown appropriate, when creating a Breakdown, add conditions to limit results to max. 500 records" ;
+                        color = 'green';
+                    }
+
+                    var bdsUrl = '/api/now/table/pa_dimensions?sysparm_display_value=true&amp;sysparm_query=facts_table=' + elmMeta.reference  ;
+                    var bdUrl = '/api/now/table/pa_breakdowns?sysparm_display_value=true&amp;sysparm_query=dimension.facts_table=' + elmMeta.reference;
+                    var bdmUrl = '/api/now/table/pa_breakdown_mappings?sysparm_display_value=true&amp;sysparm_query=facts_tableIN' + data.tables +'^field=' + elm ;
+                    
+                    var bdsHl = '/pa_dimensions_list.do?sysparm_query=facts_table=' + elmMeta.reference  ;
+                    var bdHl = '/pa_breakdowns_list.do?sysparm_query=dimension.facts_table=' + elmMeta.reference; 
+                    var bdmHl = '/pa_breakdown_mappings_list.do?sysparm_query=facts_tableIN' + data.tables +'^field=' + elm ;
+
+                    var bds = restCall(bdsUrl, index);
+                    var bd = restCall(bdUrl, index);  
+                    var bdm = restCall(bdmUrl, index);
+
+                    Promise.all([index,elm,title,color,bds, bd, bdm, bdsHl,bdHl,bdmHl,data.tables]).then(function(res) { 
+                        buildLinks(res);
+                    });
+ 
+                }
+                else {
+                    title = elm + " is a reference to a task extended table, not appropriate for Breakdown";
+                    color = 'red';
+                }
+
+            } 
+            else if (elmMeta.type == 'glide_list' ){
+                
+                title = "Field type " + elmMeta.type + " maybe appropriate for Breakdown";
+                color = 'orange';
+            }
+            else if (elmMeta.type == 'boolean' ){
+                
+                title = "Field type " + elmMeta.type + " appropriate for Breakdown";
+                color = 'green';
+            }
+            else{
+                title = "Field type " + elmMeta.type + " not appropriate for Breakdown (Only choice and reference fields are)";
+                color = 'red';
+            }
+            jQuery(this).find('.form-field-addons:first').prepend('&lt;span id="bdspan'+ index +'"&gt;1&lt;/span&gt;');
+            if (title) 
+                injectDom(index,elm,title,color,'');
+        });
+        
+        
+
+    });
+}
+
+
+function buildLinks(res){
+        
+    var isSame = false;
+    var isZero = false;
+    if (res[4].result.length == 0 &amp;&amp; res[5].result.length == 0 &amp;&amp; res[6].result.length == 0){
+        isZero = true;
+    }
+
+    if (res[4].result.length == res[5].result.length &amp;&amp; res[4].result.length == res[6].result.length)
+        isSame = true; 
+    
+
+    var link = '&lt;span style="font-size:8pt; font-family: \'Courier New\', Courier, monospace;"&gt;[';
+    if (isZero){
+        link += '&lt;a href="javascript:createBreakDown(\''+ res[10] +'\',\''+ g_form.getTableName() +'\',\''+ res[1] +'\')"&gt;+&lt;/a&gt;';
+    }
+    if (!isSame){  
+        if (res[4].result.length == 0) 
+            link += '0|';
+        else if (res[4].result.length == 1)
+            link += '&lt;a href="/pa_dimensions.do?sys_id=' + res[4].result[0].sys_id + '" target="bd"&gt;' + res[4].result.length + '&lt;/a&gt;|';
+        else
+            link += '&lt;a href="' + res[7] +'" target="bd"&gt;' + res[4].result.length + '&lt;/a&gt;|';
+    }
+    if(!isZero){
+        if (res[5].result.length == 0)
+            link += '0'; 
+        else if (res[5].result.length == 1)
+            link += '&lt;a href="/pa_breakdowns.do?sys_id=' + res[5].result[0].sys_id + '" target="bd"&gt;' + res[5].result.length + '&lt;/a&gt;';
+        else                            
+            link += '&lt;a href="' + res[8] +'" target="bd"&gt;' + res[5].result.length + '&lt;/a&gt;';
+    }
+    if (!isSame){                        
+        if (res[6].result.length == 0) 
+            link += '|0'; 
+        else if (res[6].result.length == 1) 
+            link += '|&lt;a href="/pa_breakdown_mappings.do?sys_id=' + res[6].result[0].sys_id + '" target="bd"&gt;' + res[6].result.length + '&lt;/a&gt;';
+        else     
+            link += '|&lt;a href="' + res[9] +'" target="bd"&gt;' + res[6].result.length + '&lt;/a&gt;' ; 
+    }
+    link += ']&lt;/span&gt;';
+    injectDom(res[0],res[1],res[2],res[3],link);
+}
+
+function injectDom(id, elm, title, color, links ){
+    var htm =  '&lt;span class="injected"&gt;&lt;span id="tt'+ id +'" class="icon icon-workflow" data-container="body" data-field="'+
+        elm +'" title="'+ title +'" style="color:'+ color +'; display:inline !important"&gt;&lt;/span&gt; ' + links +  '&lt;/span&gt;';
+    
+    jQuery('#bdspan' + id ).html(htm);
+    jQuery('#tt' + id).tooltip()
+    .on('hide.bs.tooltip', function(e) {
+        e.preventDefault(); 
+        jQuery('div.tooltip').hide();
+    });
+}
+
+
+
+
+function restCall(url) {
+	var hdrs = {
+		'Cache-Control': 'no-cache',
+		'Accept': 'application/json',
+		'Content-Type': 'application/json'
+    }
+    if (g_ck) //only for instances with high security plugin enabled
+        hdrs['X-UserToken'] = g_ck;
+
+    respObj = jQuery.ajax({
+      url: url,
+      method: 'GET',
+      headers: hdrs
+  });
+  return respObj
+}
+
+
+function createBreakDown(tables,table,field){
+
+    g_form.clearMessages();
+    g_form.addInfoMessage('&lt;span class="icon icon-loading"&gt;&lt;/span&gt; Breakdown being created...');
+    	jQuery.getJSON( "/pahelper.do?action=createbreakdown&amp;tables=" + tables + "&amp;table=" + table + '&amp;field=' + field, function( data ) {
+            var err = false;
+            if (data.error) err = true;
+            var msg = 'Please review the created Breakdown: &lt;a href="/pa_breakdowns.do?sys_id=' + data.sys_id + '" target="bd"&gt;' + data.name + '&lt;/a&gt;';
+            if (data.error) msg = data.error;
+                pa_analyse(msg,err);
+	}); 
+
+}]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;arnoud.kooi@snc&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-08-09 10:59:48&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;06b13b504f604b4035e0fdb28110c78b&lt;/sys_id&gt;&lt;sys_mod_count&gt;181&lt;/sys_mod_count&gt;&lt;sys_name&gt;PA Breakdown Helper&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_06b13b504f604b4035e0fdb28110c78b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Arnoud.Kooi&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-08-17 12:55:17&lt;/sys_updated_on&gt;&lt;table&gt;global&lt;/table&gt;&lt;ui11_compatible&gt;false&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1939180711</payload_hash>
+<remote_update_set display_value="PA - UI Action Utils">bb76a76c1b37f050ba6a437cbc4bcb86</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>arnoud.kooi</sys_created_by>
+<sys_created_on>2021-11-10 15:31:23</sys_created_on>
+<sys_id>7f76a76c1b37f050ba6a437cbc4bcb88</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15e03f6dbc50000001</sys_recorded_at>
+<sys_updated_by>arnoud.kooi</sys_updated_by>
+<sys_updated_on>2021-11-10 15:31:23</sys_updated_on>
+<table>global</table>
+<target_name>PA Breakdown Helper</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid>13c54d901b7c8b0004da65e7b3490b60</update_guid>
+<update_guid_history>13c54d901b7c8b0004da65e7b3490b60:-1939180711,bfd85507d2e80b00fc69b5952ba9a02f:-1939180711,1488410f62a80b00c43144918300039d:1570784530,53ee4234466c4b40dc352a503e69492b:-2066301219,305882303a6c4b401610f9e7413df6bb:40954680,8b38c6302b6c4b404bc967ab138e54ed:-95185490,e37682fc4d2c4b40eb9c1616e334b3e3:1009967734,6ed58abca22c4b40cbb471d5471a2253:-1492334528,c4e40e7cf22c4b402d6dd6e5bfac8f50:443508184,ad24867cce2c4b40a4cc829fa05a3c7f:-2017863153,de1979f4942c4b40843037a8917df1f6:-292645625,74a37974052c4b40e9bbef6dac7937f3:1424703567,ed137574142c4b40c28f5aa7cb844301:-1242016367,76d0b134232c4b405a0c4b65c15acf15:559502554,1133dd74f1e84b4025f6040b6f8de9f9:755892922,7c42e8fc58684b40fe77932cc60fb3b3:1070088416,679124fcdd684b403bedc8d938eee46d:25485471,36c06cbc92684b404cf5fd47b9e00ea0:-1039927409,1f5fd0bc04684b40d7e7edd638378f65:-685729944,567e107cc4684b40419b090da9a94759:1532396688,713b98f871684b40bd0a16822801ff15:-646577643,46285cb888684b407b631bbf5b25090d:138788396,60c710f825684b402fb144a0aa917bc9:-89738286,d34750b84e684b408c4bee7fcf95cee5:1642037157,da99d7ac76e44b4083f6b8a649c7771a:437324469,cb49d7ac04e44b40361f201af516642e:-88888754,babbc728f3e44b407ef5f165021b1390:-2146156661,079b872815e44b4077ce92bf8b01d18f:-1413107107,50ba47e4f8e44b40aacc1719f7d4ae80:-1332344667,aa9a47e4bee44b405aac323d5af42968:1860372429,225907e4b0e44b40e0cf2af526d47b76:1913863661,9b098fa403e44b409ef6d26d976578cb:1808062226,44a84fa4cae44b4040e8ec0485d7c25f:-1827756732,80880ba4c9e44b4083f5d454715c501a:-2084460372,32c7c7a419e44b40753daecabf771b28:505428424,e9a787a4bae44b40cff7b0b91be46220:-1203269660,336707a43ae44b4000b5e1c0b14fe82e:-2005661489,c20703a4fce44b4032bce93657b5a289:1003111374,8f860b64e3e44b406521655a06bb6b82:-1128726105,39e50364d9e44b404aabf028d07968c4:-252454061,ef018fa0c8e44b40314c2ab874bd12d3:-1520088645,94904ba0ebe44b409ab8e55611467b8c:735525019,ec200ba04ce44b40d7717ea07ce593f4:393662716,b81047a0e1e44b404887cd1ff0b0e899:461507844,a1bf36a01de44b40f97e38c92e9679b0:-1738748810,734fbe60dde44b40fef70ab91477c360:558142567,c13d3e206ce44b4038f8707124173a21:312289611,872dfe207de44b40097a0dcdfba64f84:-1073101917,8beb722011e44b402a87e32f780e22d4:-1805162105,e39bfeecdfa44b40d85982ce471fe6d3:481758049,9c3b7eec28a44b4008a377af14de7dba:-1305927417,200bbaecb9a44b4066a6cc3d17c7d94e:453913117,febabaec8ea44b40994d1b62490dd144:1795412409,c9aa3aec92a44b40bbc3da4c52f289e7:-557383133,598a36ec04a44b40673684b32eb46e13:-1824178685,391ab2eca7a44b40a7d5019690eb9e79:-1805700434,b4d9beac97a44b40fcfd8e0289e99c1c:814439666,74897aac2ea44b4018d1d32dec2257f9:-241612869,71193aac4da44b40688cf71dbf7eda04:1970553145,ccc832ac4fa44b402342bb0175d165ad:816200137,d1f3b22c5aa44b40e529cb93c09bca28:-50053021,5f1336a867a44b40b278f1c0b16b90cc:1357824990,8513f6e88ba44b4078bb318e4c0b2ac5:-1071329849,a7dfee685ca44b40e8d4c5a9ad1fc9bb:1045190581,854fea68a4a44b401132a27e0eb93cd4:904565527,237deae425a44b401ac1fe3bc3912068:2013966411,bb6deae476a44b401b75792291f69b97:835640309,f58ae2e49ea44b404c63eabd9df69b60:324720952,cd69e2a460a44b40f7a16b67a846d931:-1260640995,73d62e249fa44b405bec7efdd9248680:-20231445,ffc222244fa44b401c104595e11c3a05:895887700,7e626ee036a44b40b04eea14d80a1a30:1232293916,d1e12aa087a44b406310d2fb84e955cd:1638554056,dd3f16a088a44b4087e65eec760b67ed:783668214,a31f56a004a44b40a59c10af70197c0a:1396881060,77ce12a05ea44b40c7771fa598ea0df9:-1667790503,44ae92a045a44b401e3792697679b515:-320298027,d29e92a0a0a44b40659c876d6061a312:-1854851293,086dd6603ea44b40028919780ba6350e:-453970545,ec2dde2046a44b4042e25a596be70479:-775921097,6c0c1620a1a44b40a655714a453809e8:-1801708662,faeb1620bea44b407e916807d3dca8e5:2146834126,197b9eec1c644b40e5a8f0074f1e4ac7:-1985921910,2a9adeec18644b4070dab6c362f68626:-1713289612,a3b99eac3b644b4050534830ab8fd914:-853142675,1a699aec9a644b4001ffa2afe1e37ee9:1390986541,2039d2ec68644b401e20f5fe04da83fb:-632442903,31685aace5644b400b9a6bd35538655c:1609224221,f6b75e6c68644b4048acd963f65744ae:-1749175449,8e175a6c8c644b400ddaa9ce248853fd:640298464,8176926c20644b407904f3673cfedc20:-1274512904,b3641a2c54644b40784e678bf2a6b9e6:-1127816432,5ed21a2c69644b404fc9ed69f7db1cde:-904747016,ee415ee8c4644b400fbc75dd50fa3b99:123394524,0511dae851644b400757b6f85619fc15:41060224,5df096e86a644b4006138c618f33cfa4:-520820804,abc096e830644b402ef4826ea56bf59f:-1765090848,b98096e887644b40e4970e4dfe11a499:-1912335002,60305ea849644b403c02c345c17e141b:-1690865342,feef4ea8b6644b407ceaead756502f17:1357304664,276e02a80d644b408430d527d25d8ed1:1262631344,750e4a685d644b404a46dda4b5bb160c:-927096100,b1fd02a87c644b405107cce79340ebce:-1848578160,fc9d8e68f2644b40a1ebf5c04947f3b4:-501686087,f65dc26848644b4030de2c4a2f91f5d9:1769636147,39acc2686a644b404019f48085e65cd5:1695229381,fe1c4e28b1644b40e3bf406bd2b47e37:-1060947880,b4ba822887644b4099e5423f9b1f29ba:-1617886331,638acea43e644b40ee1dbdeb4ccc7751:539947019,0c4a822856644b40996aab7c26d95bc6:1854106331,f8c98ae49d644b40f3bfc4b269ee2f3b:144204445,edb386644c644b406efa63eca02cb3b1:1173047125,c683cae0a6644b408fa441c147492885:-1980454240,5063cae060644b405d5efd7ab4acd4ad:1736837402,044e75a0a4644b4017c55bf6ede5bb7f:1134460843,af3dfd609e644b40bfd73ee17689293c:1186669971,dcbcfd6038644b40ca27f850e848bb38:-1604444971,903a756025644b40b893eb9c1d883b04:-2140362874,6cf9f5ecc0244b40079329bb7e954b90:143885750,9d28b5ac30244b40e0ed964179250082:-833063897,bee5bd2c94244b40c33d7f136098ab50:-1956365549,7f99a9e4f7244b40204516de0510218d:1538387886,24b7e9e4a2244b4021b9ca523c055b3d:718500479,6147a9289c244b407415e254e01ca991:-1530486486,90f6a92873244b4003445f89779ee58d:1321981961,0fc4e9e437244b40eae458daf0c6a231:966598960,b36421e47d244b404cac31968f91b826:-1537708644,6f1265a499244b402fe0d62021a0f9ad:627177928,25f174ec5ca04b406c6043d4a6622172:-1116595723,4e6030ac20a04b409daf0d8ce1be80f1:979570288,c9bf2cecf6a04b40de7be290575fe628:-277581190,f44de4ac02a04b401e162e80d6a665a1:-2050979382,5fdce4ac23a04b40739bec43023e699c:-1665513656,0fbca4acd1a04b406a97aa34bef59e58:-369870650,b5ace82cd5a04b4071f752ff38e432e8:168027173,7f9c686c72a04b4053c58096aee877cc:-369870650,d84c686c5ea04b40ad819ef643c8ccc8:1123228842,9b9b686c18a04b407605445f0e3ac4c5:-543848468,7809e42c1da04b409dc67cc6ebdd4704:-1043632307,7788a8a888a04b409cc6bafb28071f88:540169483,3747ace8a8a04b40b090ca59360a844f:-474225574,9d75a8a8a9a04b403e56306237321b7f:-392265738,f115a8a8b8a04b40981e3748345b99bb:-1234165800,ba8460a836a04b401c5b7d8e60d9be15:-1209658107,7a0424e4f6a04b40638697f00a907966:126915786,1b3d182450a04b40c2e651644a310a96:101328042,b86cd06410a04b4099e60144a85e4be6:1390353403,d25bd064b4a04b40b2f6e03b59c1b0e1:-521436446,c62adc241fa04b404947ef3adef0b412:306923782,6af9dc249ea04b401b2ff493388a850e:1878283812,557914e049a04b4018a791deb84df608:2108475394,0739942490a04b40851aac28684546da:1099129268,c00994246fa04b4086f78123aa904ed7:2146685885,073814e0bba04b402bc03d08db130505:1854827419,7bb710e0f1a04b408ec994f4e992acdb:410675184,6c57d0e047a04b40bab2d9cc851aa5ff:1724936174,b7bb8c2cbd604b40c788f85d293a58c9:-130123717,587acc6c4b604b403d7ef0275e4d7e12:2143827375,aa3a802c1b604b40394bd51248b390fa:-103513431,e4f9406cfd604b40e2816fcab16850b8:1221743393,33798c2cc0604b4049a3f3815e372cc4:-1517695166,ce698c2c64604b40ac8da585aed6aac0:-256950668,de5100a867604b407023ca4346fc7398:-372618833,30114c6866604b40354c647302e0a5ae:-470426114,0b90c468dc604b404a6c98855277b339:-1527415846,040ef7183a604b40d586172aa8b114e8:871338002,18edbfd49e604b40e26c204bd3100536:-1675499448,800af394a0604b40d1f2b700f9443197:-881570531,5d99f394d9604b402317eefa5214da46:27384363,50193b5409604b40f6bfea2eb9c4d47b:1004146521,4b283f149b604b40a82d2baf08e6fbd1:-1816822971,e128335467604b40420833191fee3224:-961169250,3896fb1456604b40fbe9057d1e0e7e43:1312605070,4076b31489604b4030bd4c382437e075:1368664174,175533148b604b4021f4b24b7125a475:2086153872,a7253fd025604b407b927af3263387df:1550878798,5fd43fd027604b4066de226808c3b4d8:870935365,35847bd05d604b402a09c6ba60d1b67f:-2042659361,ec3437d0da604b40c65d2a66d0fd2222:1243513074,abf3f3d0e8604b40024944c643b7ebb7:937021376,1ae2f790db604b404b0be6b61e4f233c:-1688760717,4e627390b4604b40c3d332d3823fa20a:784149390,cab13b5016604b40d0f5f1db477f248c:-444557815</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_9f4352fedb4b6600d19870d9bf961913</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;Toggle Fieldnames to Script&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;true&lt;/client&gt;&lt;comments&gt;Toggle the  names of the fields as a comment line to the top of the script field, prevents searching for the names.&amp;#13;
+&amp;#13;
+Part of PA - UI Action Utils by Arnoud Kooi&lt;/comments&gt;&lt;condition/&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;false&lt;/form_button&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;true&lt;/form_link&gt;&lt;hint&gt;Toggle the  names of the fields to the script&lt;/hint&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;name&gt;Toggle Fieldnames to Script&lt;/name&gt;&lt;onclick&gt;toggleFieldNamesAsComment();&lt;/onclick&gt;&lt;order&gt;90&lt;/order&gt;&lt;script&gt;&lt;![CDATA[function toggleFieldNamesAsComment() {
+	
+	var startString =  '// Used fields: ';
+	var currentScript = '' + g_form.getValue('script');
+	var newScript = '';
+	
+	if (currentScript.startsWith(startString))
+		newScript = currentScript.substring(currentScript.indexOf("\n") + 1);
+	else {
+		
+		var arg = g_form.getValue('arguments').replace(/,/g, ', current.');
+		if (arg) arg = 'current.' + arg; else arg = 'No fields yet...';
+			
+		var comment = startString + arg + '\n';
+		newScript = comment + currentScript;
+	}
+	
+	g_form.setValue('script', newScript);
+}]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Arnoud.Kooi_SHARE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-11-16 12:46:45&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;9f4352fedb4b6600d19870d9bf961913&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;Toggle Fieldnames to Script&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_9f4352fedb4b6600d19870d9bf961913&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Arnoud.Kooi_SHARE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-11-18 20:45:52&lt;/sys_updated_on&gt;&lt;table&gt;pa_scripts&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash/>
+<remote_update_set display_value="PA - UI Action Utils">bb76a76c1b37f050ba6a437cbc4bcb86</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>arnoud.kooi</sys_created_by>
+<sys_created_on>2021-11-10 15:31:23</sys_created_on>
+<sys_id>b376a76c1b37f050ba6a437cbc4bcb8a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15c8cd77b180000000</sys_recorded_at>
+<sys_updated_by>arnoud.kooi</sys_updated_by>
+<sys_updated_on>2021-11-10 15:31:23</sys_updated_on>
+<table>pa_scripts</table>
+<target_name>Toggle Fieldnames to Script</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_3212ca734fde220074570ab18110c71c</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;Test Conditions in List&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;true&lt;/client&gt;&lt;comments&gt;Open a new tab with the current condition, included with the condition of the Indicator Source &amp;#13;
+&amp;#13;
+Part of PA - UI Action Utils by Arnoud Kooi&lt;/comments&gt;&lt;condition&gt;current.type != 2&lt;/condition&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;false&lt;/form_button&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;true&lt;/form_link&gt;&lt;hint&gt;Open a new tab with the current condition, included with the codition of the Indicator Source &lt;/hint&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;name&gt;Show Conditions in List&lt;/name&gt;&lt;onclick&gt;openlist();&lt;/onclick&gt;&lt;order&gt;30&lt;/order&gt;&lt;script&gt;&lt;![CDATA[function openlist(){ 
+	
+	var src_cond = g_scratchpad.cube_conditions.replace('^EQ','');	
+	var ind_conds = g_form.getValue('conditions').split('^NQ');
+
+	var comb_cond = ''; 
+	for (var i = 0;i&lt;ind_conds.length;i++){
+		comb_cond += '' +src_cond + '^' + ind_conds[i] + '^NQ';
+		
+	}
+	comb_cond = comb_cond.substr(0,comb_cond.length-3);
+	var myurl = '/' + g_scratchpad.cube_facts_table + 
+		'_list.do?sysparm_query=' + comb_cond;
+		window.open(myurl); 	
+}]]&gt;&lt;/script&gt;&lt;show_insert&gt;false&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Arnoud.Kooi_SHARE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-10-10 10:00:00&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;3212ca734fde220074570ab18110c71c&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_name&gt;Show Conditions in List&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_3212ca734fde220074570ab18110c71c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Arnoud.Kooi_SHARE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-11-18 20:37:39&lt;/sys_updated_on&gt;&lt;table&gt;pa_indicators&lt;/table&gt;&lt;ui11_compatible&gt;false&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash/>
+<remote_update_set display_value="PA - UI Action Utils">bb76a76c1b37f050ba6a437cbc4bcb86</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>arnoud.kooi</sys_created_by>
+<sys_created_on>2021-11-10 15:31:23</sys_created_on>
+<sys_id>b776a76c1b37f050ba6a437cbc4bcb89</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15c8cd77b180000000</sys_recorded_at>
+<sys_updated_by>arnoud.kooi</sys_updated_by>
+<sys_updated_on>2021-11-10 15:31:23</sys_updated_on>
+<table>pa_indicators</table>
+<target_name>Show Conditions in List</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_f5afb9544f7f36009881c5c18110c7f2</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.PATestDataCollect&lt;/api_name&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description&gt;Called from UI action to collect on the fly testing during development&amp;#13;
+Part of PA UI Action Utils&lt;/description&gt;&lt;name&gt;PATestDataCollect&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var PATestDataCollect = Class.create();
+PATestDataCollect.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+	startCollect:function() {
+		
+		var sysId = "21b4619c4f3f36009881c5c18110c788"; //use a fixed sysid
+		try {
+			var opts = this.getParameter('sysparm_options');
+			var indicator = this.getParameter('sysparm_indicator');
+			
+			var options = opts.split(",");
+			
+			var start = 30;
+			var end = 0;
+			var scoreInterval = "days";
+
+			if (options.length &gt; 0)
+				if (this._isInt(options[0]))
+					start = Math.min(500,options[0]);
+			
+			if (options.length &gt; 1)
+				if (this._isInt(options[1]))
+					end = Math.min(100,options[1]);
+			
+			if (options.length &gt; 2) {
+				var itv = "" + options[2];
+				if (itv.length &gt; 0){
+					if (itv == "w")
+						scoreInterval = "weeks";
+					else if (itv == "m")
+						scoreInterval = "months";
+				}
+			}			
+			gs.log("Indicator job started " + opts,"PA Adhoc Job");
+			
+			var update = false;
+			var gr = new GlideRecord('sysauto_pa');
+			if (gr.get(sysId)) { //delete old jobindicators
+				var del = new GlideRecord('pa_job_indicators');
+				del.addQuery("job", sysId);
+				del.query();
+				del.setWorkflow(false);
+				del.deleteMultiple();
+				update = true;
+			}
+			else{
+				gr.initialize();
+			}
+			gr.description =
+			"Temporary job, created from UI Action.\nDo not change this manual\nCreated:" + gs.nowDateTime();
+			gr.score_relative_start = start;
+			gr.score_relative_end = end;
+			gr.score_relative_start_interval = scoreInterval;
+			gr.score_relative_end_interval = scoreInterval;
+			gr.active = false;
+			gr.name = "[tmp] PA";
+			gr.setWorkflow(false);
+			
+			
+			if (update){
+				gr.update();
+			}
+			else{
+				gr.setNewGuidValue(sysId);
+				gr.insert();
+			}
+			
+			var ji = new GlideRecord('pa_job_indicators');
+			ji.initialize();
+			ji.indicator = indicator;
+			ji.collect_indicator = true;
+			ji.job = sysId;
+			ji.collect = 1;
+			ji.setWorkflow(false);
+			ji.insert();
+			
+			SncTriggerSynchronizer.executeNow(gr);
+			
+			return "Temporary job created and started&lt;br /&gt;Start: " + start +
+			" - End: "+ end +" - Interval: " + scoreInterval + " - &lt;a href='/sysauto_pa.do?sys_id="+ sysId +"'&gt;Review Job&lt;/a&gt;";
+		}
+		catch (err){
+			
+			gs.log("Error: " + err,"PA Adhoc Job");
+			return "Error executing job: " + err ;
+			
+		}
+		
+	},
+	_isInt: function(value){
+		return !isNaN(value) &amp;&amp; (function(x) { return (x | 0) === x; })(parseFloat(value));
+			
+		}
+	});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-02 19:54:21&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;f5afb9544f7f36009881c5c18110c7f2&lt;/sys_id&gt;&lt;sys_mod_count&gt;20&lt;/sys_mod_count&gt;&lt;sys_name&gt;PATestDataCollect&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_f5afb9544f7f36009881c5c18110c7f2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-15 11:07:59&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-124006126</payload_hash>
+<remote_update_set display_value="PA - UI Action Utils">bb76a76c1b37f050ba6a437cbc4bcb86</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>arnoud.kooi</sys_created_by>
+<sys_created_on>2021-11-10 15:31:23</sys_created_on>
+<sys_id>bb76a76c1b37f050ba6a437cbc4bcb88</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15d45ef07e80000001</sys_recorded_at>
+<sys_updated_by>arnoud.kooi</sys_updated_by>
+<sys_updated_on>2021-11-10 15:31:23</sys_updated_on>
+<table/>
+<target_name>PATestDataCollect</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_guid>cad343d08244cb00197a5540cebe4758</update_guid>
+<update_guid_history>cad343d08244cb00197a5540cebe4758:-124006126,84d343d0ac44cb006fad9a1e9e6b9452:-1901760864,0c7c897f9877ba004477502b3fa15da7:-91779296,137dda582dbf3600bd176f49ac72d451:-440978747,d2c0d290c3bf36008d79657fd3a4e537:1994896278,1c305e5047bf3600616b5a0f52b329a3:-1620641402,449f0e5068bf36001ac8771604817087:1913424872,9d6f0e506ebf3600f4b50a1ce63abd72:1700310921,051fc2500ebf36003fd41f50f0bdc1a9:-595605656,b64e42501ebf36005d1c47cef22317cc:1158505057,321ece107bbf3600c87d431490cbd059:1032756684,64cd86103abf360097a81f4a71d80fe5:1031944378,217d0edc2e7f36005b5df4556f02de2b:1087626514,20fc0edc2b7f360045abfa7b001b5101:1534483912,f05b82dc277f3600624cee3ee54703b3:616230403,aa898e5c3a7f360099216d405624ba9b:345028812,9686c65cf37f3600009f9d0401328e0a:-473519245,c626865cc67f360022c6b63a0cff6d0d:-1897466568,a1f3821cae7f3600e2c58de5ad30f3d4:-1421075007,eff282d8cd7f3600e2d342b09873d71e:1908732716,79afb9547f7f3600f50da76517ee6ef4:-1722840628</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_relationship_4427b8354fe487009881c5c18110c77a</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_relationship"&gt;&lt;sys_relationship action="INSERT_OR_UPDATE"&gt;&lt;advanced&gt;false&lt;/advanced&gt;&lt;apply_to/&gt;&lt;basic_apply_to&gt;pa_indicators&lt;/basic_apply_to&gt;&lt;basic_query_from&gt;pa_indicators&lt;/basic_query_from&gt;&lt;insert_callback/&gt;&lt;name&gt;Formula Contains&lt;/name&gt;&lt;query_from/&gt;&lt;query_with&gt;&lt;![CDATA[(function refineQuery(current, parent) {
+
+current.addQuery('sys_id','IN', pahelper.getContainingIndicators(parent.getValue('sys_id')));
+
+})(current, parent);]]&gt;&lt;/query_with&gt;&lt;reference_field&gt;sys_scope&lt;/reference_field&gt;&lt;related_list/&gt;&lt;simple_reference&gt;false&lt;/simple_reference&gt;&lt;sys_class_name&gt;sys_relationship&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-08-13 16:01:02&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;4427b8354fe487009881c5c18110c77a&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;Formula Contains&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_relationship_4427b8354fe487009881c5c18110c77a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-08-13 16:33:54&lt;/sys_updated_on&gt;&lt;/sys_relationship&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=4427b8354fe487009881c5c18110c77a"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>198960170</payload_hash>
+<remote_update_set display_value="PA - UI Action Utils">bb76a76c1b37f050ba6a437cbc4bcb86</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>arnoud.kooi</sys_created_by>
+<sys_created_on>2021-11-10 15:31:23</sys_created_on>
+<sys_id>bf76a76c1b37f050ba6a437cbc4bcb87</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15e040205680000001</sys_recorded_at>
+<sys_updated_by>arnoud.kooi</sys_updated_by>
+<sys_updated_on>2021-11-10 15:31:23</sys_updated_on>
+<table/>
+<target_name>Formula Contains</target_name>
+<type>Relationship</type>
+<update_domain>global</update_domain>
+<update_guid>3198c114747c8b00aec735205c0b5b81</update_guid>
+<update_guid_history>3198c114747c8b00aec735205c0b5b81:198960170,c3846df50e288700174de392715ed282:198960170,2b74adf53a28870064c5874ef1bdee36:2111521951,86442df5d028870060ffe52fdee8e8ae:197121706,d234e9f584288700bf6aae022964eefe:309460234,358e117575288700d16855cb071805f6:1348643289,227d993540288700a45d432f9a69c23d:1467587018,2d0d5135c1288700a2cdff114dab488a:1878113909</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_df828a4c4f4c8b0035e0fdb28110c720</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name/&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;false&lt;/client&gt;&lt;comments&gt;Add all the Dashboard assets to current update set only for responsive canvas, does not add Reports, widgets etc.&amp;#13;
+Part of PA UI Action Utils&lt;/comments&gt;&lt;condition&gt;gs.hasRole("admin") || gs.hasRole("pa_admin") &lt;/condition&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_style/&gt;&lt;hint&gt;Add all the Dashboard assets to current update set&lt;/hint&gt;&lt;list_action&gt;true&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;true&lt;/list_choice&gt;&lt;list_context_menu&gt;true&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;name&gt;Dashboard to update set&lt;/name&gt;&lt;onclick/&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[var sysIds = []; //placeholder for sys_id's to push to updateset
+sysIds.push(current.sys_id); //first step
+
+var group = updateSave("pa_dashboards", sysIds, "sys_id", "group");
+updateSave("pa_dashboards_group", group, "sys_id", "sys_id");
+sysIds = updateSave("pa_m2m_dashboard_tabs", sysIds, "dashboard", "tab");
+sysIds = updateSave("pa_tabs", sysIds, "sys_id", "page");
+updateSave("sys_grid_canvas", sysIds, "legacy_page", "sys_id");
+updateSave("sys_portal_page", sysIds, "sys_id", "sys_id");
+
+deleteCanvasPanes();
+
+//Add or unload reord to updatset
+//return specified column sys_id's for usage in next step
+function updateSave(table, sysIds, inputColumn, returnColumn){
+	var rtrn = [];
+	var gr = new GlideRecord(table);
+	gr.addQuery(inputColumn, sysIds);
+	gr.query();
+	while (gr.next()) {
+		//gr.setForceUpdate(true);
+		//gr.update();
+		if (table == "sys_portal_page" || table == "sys_grid_canvas")
+			GlideappHome.unloader(gr);
+		else
+			gs.updateSave(gr);
+		
+		rtrn.push(gr.getValue(returnColumn));
+	}
+	return rtrn;
+}
+
+//remove sys_grid_canvas_pane records from updateset (jakarta)
+//causes errors, get rid of it, allready added in xml of sys_grid_canvas after unload
+function deleteCanvasPanes(){
+	var us = new GlideUpdateSet();
+	var gr = new GlideRecord('sys_update_xml');
+	gr.addQuery("update_set", us.get());
+	gr.addQuery("type", "Grid Canvas Pane");
+	gr.query();
+	gr.deleteMultiple();
+}
+]]&gt;&lt;/script&gt;&lt;show_insert&gt;false&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-14 11:44:13&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;df828a4c4f4c8b0035e0fdb28110c720&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_name&gt;Dashboard to update set&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_df828a4c4f4c8b0035e0fdb28110c720&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-17 13:33:24&lt;/sys_updated_on&gt;&lt;table&gt;pa_dashboards&lt;/table&gt;&lt;ui11_compatible&gt;false&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1234040361</payload_hash>
+<remote_update_set display_value="PA - UI Action Utils">bb76a76c1b37f050ba6a437cbc4bcb86</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>arnoud.kooi</sys_created_by>
+<sys_created_on>2021-11-10 15:31:23</sys_created_on>
+<sys_id>bf76a76c1b37f050ba6a437cbc4bcb8a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15d50c0e1d00000001</sys_recorded_at>
+<sys_updated_by>arnoud.kooi</sys_updated_by>
+<sys_updated_on>2021-11-10 15:31:23</sys_updated_on>
+<table>pa_dashboards</table>
+<target_name>Dashboard to update set</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid>23483905acc40f003a16dc5396b45370</update_guid>
+<update_guid_history>23483905acc40f003a16dc5396b45370:-1234040361,fbd5cfd08d44cb00b1139e63e9d157e1:398918893,938587d0a444cb00b283e823068772a4:1169310085,70aa4e40e28c8b00c16896277719b863:1259984888,5ce60acc624c8b00d8f9ab30a075d5d3:-1163581033,9653068c0e4c8b009e81e20ab620d5f8:-145278519,bf03028c894c8b007690b38e2e88a097:-1767841140,99b24e4c3f4c8b001bb66079fee72adb:1523918121,97828a4c174c8b00eb3aee6877835c22:-1952732534</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_1a9f4a324f640b009881c5c18110c7f7</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name/&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;true&lt;/client&gt;&lt;comments/&gt;&lt;condition&gt;!current.isNewRecord() &amp;amp;&amp;amp; current.type == 2&lt;/condition&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;false&lt;/form_button&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;true&lt;/form_link&gt;&lt;form_style&gt;primary&lt;/form_style&gt;&lt;hint/&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;name&gt;Check Breakdowns&lt;/name&gt;&lt;onclick&gt;checkIndicatorBreakDowns()&lt;/onclick&gt;&lt;order&gt;1&lt;/order&gt;&lt;script&gt;&lt;![CDATA[function checkIndicatorBreakDowns() {
+  
+  var gm = new GlideModal('ind_bds',false, 'modal-lg');  
+  gm.setPreference("sysparm_indicator", g_form.getUniqueValue());   
+  gm.setTitle("Asses Breakdowns");  
+  gm.render();  
+}  
+  ]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Arnoud.Kooi&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-08-16 22:19:03&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;1a9f4a324f640b009881c5c18110c7f7&lt;/sys_id&gt;&lt;sys_mod_count&gt;10&lt;/sys_mod_count&gt;&lt;sys_name&gt;Check Breakdowns&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_1a9f4a324f640b009881c5c18110c7f7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Arnoud.Kooi&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-08-18 09:31:05&lt;/sys_updated_on&gt;&lt;table&gt;pa_indicators&lt;/table&gt;&lt;ui11_compatible&gt;false&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>781404316</payload_hash>
+<remote_update_set display_value="PA - UI Action Utils">bb76a76c1b37f050ba6a437cbc4bcb86</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>arnoud.kooi</sys_created_by>
+<sys_created_on>2021-11-10 15:31:23</sys_created_on>
+<sys_id>f376a76c1b37f050ba6a437cbc4bcb89</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15e03f6dbaa0000001</sys_recorded_at>
+<sys_updated_by>arnoud.kooi</sys_updated_by>
+<sys_updated_on>2021-11-10 15:31:23</sys_updated_on>
+<table>pa_indicators</table>
+<target_name>Check Breakdowns</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid>93c50d90557c8b00e20ed523bdca5228</update_guid>
+<update_guid_history>93c50d90557c8b00e20ed523bdca5228:781404316,4eb3b91faba04b00c2d4b6409a96a67b:781404316,c6d45636ea640b0052f7b04290f32ec5:1416311374,dfa49ef22b640b00c2fc85cf54d03185:778031264,958316f222640b003adf3dd4a3936bbf:548944602,be03deb210640b0099f1d5f89709a649:-1617184760,cbb21ab276640b00b03902868ee22b51:-474777058,45c1d2b284640b000ae0922f2146b5eb:-1717203719,2031d6725a640b00bd50ed44f53ea2ee:-191152900,c1e096728a640b0067e31cc202fb98d5:-1717203719,2680127221640b00a3ab9c7fbf8e73a2:-96106181,44505632fd640b004137eec7e8b98d8f:-161568638</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_0bbb59e04f244b4035e0fdb28110c776</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.pahelper&lt;/api_name&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;pahelper&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var pahelper = {
+	
+	getTables: function (tableName) {
+		var tu = String(GlideDBObjectManager.get().getTables(tableName));
+		var mod_table_str = tu.slice(1, -1);
+		var table_array = mod_table_str.split(", ");
+		return table_array;
+	},
+	
+	getContainingIndicators: function (indicator, includeThis, arr, cnt){
+		if (typeof arr == 'undefined') arr = [];
+		if (typeof cnt == 'undefined') cnt = 1;
+		if(includeThis) arr.push(indicator);
+		var gr = new GlideRecord('pa_indicators');
+		gr.get(indicator);
+		if (gr.getValue('type') == 2) {
+			var formula = gr.getValue('formula');
+			var matches = formula.match(/\[\[(.*?)\]\]|\{\{(.*?)\}\}/g);
+			for (var i=0; i&lt; matches.length &amp;&amp; cnt &lt; 100; i++) {
+				var ind = matches[i].substring(2,34);
+				arr.push(ind);
+				arr = this.getContainingIndicators(ind,true,arr, ++cnt);
+			}
+		}
+		return new ArrayUtil().unique(arr);
+	},
+
+	
+	type: 'pahelper'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Arnoud.Kooi&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-08-09 18:45:40&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;0bbb59e04f244b4035e0fdb28110c776&lt;/sys_id&gt;&lt;sys_mod_count&gt;16&lt;/sys_mod_count&gt;&lt;sys_name&gt;pahelper&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_0bbb59e04f244b4035e0fdb28110c776&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Arnoud.Kooi&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-08-22 08:54:09&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1598500985</payload_hash>
+<remote_update_set display_value="PA - UI Action Utils">bb76a76c1b37f050ba6a437cbc4bcb86</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>arnoud.kooi</sys_created_by>
+<sys_created_on>2021-11-10 15:31:23</sys_created_on>
+<sys_id>f776a76c1b37f050ba6a437cbc4bcb88</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15e092629a50000001</sys_recorded_at>
+<sys_updated_by>arnoud.kooi</sys_updated_by>
+<sys_updated_on>2021-11-10 15:31:23</sys_updated_on>
+<table/>
+<target_name>pahelper</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_guid>4ca1162423b4cb00a2790e4a9e2a539e</update_guid>
+<update_guid_history>4ca1162423b4cb00a2790e4a9e2a539e:-1598500985,e1b4291018bc8b007d6e290dae43f5a4:1759646603,c25c1a7e52640b005a363443fa5bb2a6:1245477554,d8f896ba73640b002d13bf90c916e75a:-193321905,f567dab6ef640b006f9d3026cda71735:953684512,5bde2af5c2a88700b33ea3fa510bd237:715590938,cfbd2af56fa88700b583aba16bdf5e32:780335369,35eca6b5b7a887007a991d2393663437:-1045895745,63ac6ab562a88700dc85c122d5daf014:371247958,f5e9e67535a88700529459beda873eef:278073252,b669a27560a887004c9686afe13b6dd6:29429536,2af36db50128870052dc4593f8df2c7a:1629838742,8412e5b523288700c9309d32ea891072:-1183924947,34a6fcf14ce48700a8cd696e6683042f:389017322,8f3d15242c244b402e3c7c3c14dfce4b:-1261376986,0ccc512412244b401196f59a7925270c:-236483492,565c9de03b244b4023fbf8d2475dc31f:581904584</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_processor_5de3cdd24f54474035e0fdb28110c779</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_processor"&gt;&lt;sys_processor action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;description/&gt;&lt;interactive&gt;false&lt;/interactive&gt;&lt;name&gt;pahelper&lt;/name&gt;&lt;parameters/&gt;&lt;params_endpoint/&gt;&lt;path&gt;pahelper&lt;/path&gt;&lt;path_endpoint/&gt;&lt;require_csrf&gt;false&lt;/require_csrf&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function process(g_request, g_response, g_processor) {
+	var action = g_request.getParameter("action");
+	var tables = g_request.getParameter("tables");
+	var table = g_request.getParameter("table");
+	var field = g_request.getParameter("field");
+	
+	if (action == 'gettabledata')
+		getTableData(table);
+	else if (action == 'createbreakdown')
+		startCreateBreakDown(tables,table,field);
+	
+	
+})(g_request, g_response, g_processor);
+
+
+function getTableData(table){
+	var outp = {};
+	var table_string = String(new TableUtils("task").getAllExtensions());
+	var mod_table_str = table_string.slice(1, -1);
+	var table_array = mod_table_str.split(", ");
+	outp.tasktables = table_array;
+
+	table_string = String(GlideDBObjectManager.get().getTables(table));
+	mod_table_str = table_string.slice(1, -1);
+	table_array = mod_table_str.split(", ");
+	outp.tables = table_array;
+
+	g_processor.writeOutput(JSON.stringify(outp));
+}
+	
+function startCreateBreakDown(tables, table, field){
+	var MAX_ROWS = parseInt(gs.getProperty('com.snc.pa.dc.max_breakdown_elements_limit'));
+	var obj = getDictionaryData(tables,table,field);
+	var cnt = getRowCount(obj.bd_source_table, obj.bd_source_conditions);
+	gs.log("Rowcount:" + cnt,"auto_bd_create");
+	if(cnt &gt; MAX_ROWS){
+		var msg = {};
+		msg.error = "Breakdown would return " + cnt + " rows. The maximum is " + 
+					 MAX_ROWS + " Please create Breakdown manual";
+		
+		g_processor.writeOutput(JSON.stringify(msg));
+		return false;
+	}
+	
+	var bds = createBreakDownSource(obj);
+	var bd  = createBreakDown(obj, bds);
+	var bdm = createBreakDownMapping(obj, bd);
+	
+	var rtrn = {};
+	rtrn.name = obj.name;
+	rtrn.sys_id = bd;
+	
+	g_processor.writeOutput(JSON.stringify(rtrn));
+
+}
+
+function getRowCount(bd_source_table, conditions){
+	var ga = new GlideAggregate(bd_source_table	);
+	ga.addEncodedQuery(conditions);
+	ga.addAggregate('COUNT');
+	ga.query();
+	ga.next();
+	return ga.getAggregate('COUNT') || 0;
+}
+	
+function getDictionaryData(tables,table,field){
+	var obj = {};
+	var gr = new GlideRecord('sys_dictionary');
+	gr.addEncodedQuery("nameIN" + tables + "^element=" + field);
+	gr.query();
+	if (gr.next()) {
+		obj.indicator_tables = tables;
+		obj.indicator_table = table;
+    obj.name = gr.getValue('column_label');
+	obj.field = field;
+	obj.field_source_table = gr.getValue('name');
+	  obj.description = 'Auto generated using UI Action. Table: ' +
+			obj.indicator_table + ' Field: ' + obj.field;
+		if (gr.getValue('reference')){
+       obj.bd_source_table = gr.getValue('reference');
+       obj.conditions = gr.getValue('reference_qual_condition') || '';
+				//gr.getValue('reference_qual') || '';
+
+    }
+    else{
+      obj.choice_table = gr.getValue('choice_table') || table;
+      obj.choice_field = gr.getValue('choice_field') || field;
+      obj.bd_source_table = 'sys_choice';
+			obj.bd_source_conditions = 'name=' + obj.choice_table
+        +'^element=' +obj.choice_field 
+        +'^language=en^inactive=false^ORinactiveISEMPTY^EQ';
+    }
+ 
+	}
+	return obj;
+}
+
+function createBreakDownSource(obj){
+	var gr = new GlideRecord('pa_dimensions');
+	gr.initialize();
+	gr.setValue('name', obj.name);
+	gr.setValue('facts_table', obj.bd_source_table);
+	gr.setValue('field', 'sys_id');
+	gr.setValue('description', obj.description);
+	gr.setValue('active', true);
+	gr.setValue('conditions', obj.bd_source_conditions);
+	gr.setValue('empty_value', 'Unmatched');
+	return gr.insert();
+}
+
+function createBreakDown(obj, bds){
+	var gr = new GlideRecord('pa_breakdowns');
+	gr.initialize();
+	gr.setValue('name', obj.name);
+	gr.setValue('description', obj.description);
+	gr.setValue('dimension', bds);
+	return gr.insert();
+}
+ 
+function createBreakDownMapping(obj, bd){
+	var gr = new GlideRecord('pa_breakdown_mappings');
+	gr.initialize();
+	gr.setValue('breakdown', bd);
+	gr.setValue('facts_table', obj.indicator_table);
+	gr.setValue('field', obj.field);
+	return gr.insert();
+}
+
+
+		
+		]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_processor&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-08-02 17:15:06&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;5de3cdd24f54474035e0fdb28110c779&lt;/sys_id&gt;&lt;sys_mod_count&gt;114&lt;/sys_mod_count&gt;&lt;sys_name&gt;pahelper&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_processor_5de3cdd24f54474035e0fdb28110c779&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Arnoud.Kooi&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-08-10 17:04:32&lt;/sys_updated_on&gt;&lt;type&gt;script&lt;/type&gt;&lt;/sys_processor&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1241352720</payload_hash>
+<remote_update_set display_value="PA - UI Action Utils">bb76a76c1b37f050ba6a437cbc4bcb86</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>arnoud.kooi</sys_created_by>
+<sys_created_on>2021-11-10 15:31:23</sys_created_on>
+<sys_id>fb76a76c1b37f050ba6a437cbc4bcb87</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15e05a7a6810000001</sys_recorded_at>
+<sys_updated_by>arnoud.kooi</sys_updated_by>
+<sys_updated_on>2021-11-10 15:31:23</sys_updated_on>
+<table/>
+<target_name>pahelper</target_name>
+<type>Processor</type>
+<update_domain>global</update_domain>
+<update_guid>08027e549730cb00b8d1975ab2381dc8</update_guid>
+<update_guid_history>08027e549730cb00b8d1975ab2381dc8:1241352720,a2cec6343e6c4b401138134f21dd5526:1241352720,b88d8af01b6c4b4026726f4571b81a1c:515369509,b05882308c6c4b4001e4355891cb1dbe:-309414734,83b58abc9d2c4b4008a7a1f851735450:-237050150,b74502bcbc2c4b4034f033f78216d67c:-2062931981,ba644a3ca12c4b400923b13d4012608f:-1623113939,c143c63cc92c4b402c2b8c9b514f7ca7:1208105688,1f224ef85a2c4b4059132b638e4bab20:691349533,bcb08af81e2c4b407a354736d1f24613:-607179433,86bfb1f8c22c4b40e0a7bd7d8de754fc:725210745,059dfd78592c4b4063ddf590d1d09294:1872431418,9f0dfd781b2c4b40e3b160cdfdfe698c:-376365923,64acfd38ef2c4b40a2d932763f8211d7:1165547440,4e09b9f40d2c4b401c613a502e300cad:1096239733,258f69f0df2c4b40e1325e03bc9b8c14:1888533014,01feadb0032c4b409723e531b94aef2f:-1338899914,f37da5b0a32c4b40dfef6d36592752c3:-2137767172,738219b43ae84b409ebe6569451d692c:-1799745536,70d2ecfcb8684b40a2b371e04b314f90:1331280792,56dc1c3c90684b406e50681fc6c9300b:-2007764930,9b2958f89a684b40af57e8c50c8083d1:1857385771,378818f8dd684b40f402215e744d9c70:569409578,1ea650b8df684b4042f2c4dd6b540edf:-921615234,2c01d7a8dfe44b40881f7a9771f799df:-1141692323,5cd01ba892e44b4018273a5a8e874ff6:1839883501,47b0d7a8ade44b40c327c35326aafbec:-815585466,a06161a44a244b409d20ff2474a8aa1a:-133609478,d5c061246d244b405cec9ca275a67d4d:883645079,84d494604fa04b40060ed6a4573a9166:1044002851,7ce39460bba04b40b2841e601b37e663:1113932406,d9c3d860efa04b402b86dc1d581bee80:319951574,d0339460cea04b40c928fe804785ee5e:-1729890093,fa725460cca04b40cb5c001a7f698eb6:33222400,04629420fda04b401e9e9212c4b0fd4a:1607103945,bd219cec34604b40c113c00d209422c4:196338702,529af4a2fa1c4740c63f01fe6310c57f:-979366315,d75af4a2e91c4740c4e8750ac58969db:1340946738,207d2c2e26d8474068bfb0448e45d8c8:1348212713,6a5b98e2ddd84740308740a01db87d16:-1092442894,284b18e242d847403afd5d11c9643799:-1224902851,c82b18a249d84740375fc1b5ab593c7a:-273107520,b44918a2f0d847407a0a13fb50819e77:-1474894749,79861c22d4d84740ab89167a2648e755:433153306,8e5f91524d9447408647fe9c7b443502:1829827620,db29dd5e095447400536674597073f77:-1443119955,07a7155e9b54474097107645e650415e:1667932267,82871d1e345447405ba6cc9a44c4b477:1349322562,2b375d1eac54474042344236f7622d02:771938009,e676111e9054474032c9690a7eeea623:425573285,91c5111ed454474040f6a5dd49d8e51f:-861734686,a055dddaf9544740bdab63106fa929a6:-13825499,281599da83544740eb56691d8a1004d4:1756837724,d034d5dab5544740b26f728fb0d0bcb2:-785024364,eff29d9a515447402fb51d6f2fb59133:1576842230,b501119af6544740e1425d57ad1f376c:63159431,8aa0d95a8e5447407f46103e1bfadcc7:1314417157,52709d1aa6544740eef70eddb0a3f2db:-1899429060,2f9e0d1a615447404b80b12f68af7b69:-247671047,e16e0d1af25447408d9590a157a5a667:2117981332,e53ec51a5a5447409de93034d3466313:1943512917,427d051a235447409b82564ab11fe25c:314668122,87ec4dd6065447403de9f923f27a87b6:489136537,431cc5d602544740f6da026651266e33:1801400057,febb01d65e544740ad21a4e63113de48:44228531,7f4acd561a5447406f0d86fe186fe9be:1862319494,e7d9cd569d5447406d3d358ab7ab2fbb:1411596905,ebc9cd56ab544740925087ec26e59bb6:-1705670942,5e8805166754474086acc801141ea520:1875276116,5b74cdd2775447401cccbb59a270cf7d:1248647839</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_d9b7ca374fde220074570ab18110c7e2</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name/&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;true&lt;/client&gt;&lt;comments&gt;Preview your wiget without adding ot or loading it on a Dashboard, using a GlideBox&amp;#13;
+&amp;#13;
+Part of PA - UI Action Utils by Arnoud Kooi&lt;/comments&gt;&lt;condition/&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;false&lt;/form_button&gt;&lt;form_context_menu&gt;true&lt;/form_context_menu&gt;&lt;form_link&gt;true&lt;/form_link&gt;&lt;hint&gt;Preview your wiget without adding ot or loading it on a Dashboard&lt;/hint&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;name&gt;Preview Widget&lt;/name&gt;&lt;onclick&gt;showWidget()&lt;/onclick&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[function showWidget() {
+	
+	if (!g_form.submitted &amp;&amp; g_form.modified) {
+		g_form.addWarningMessage('Please save widget before previewing');
+		return;
+	}
+	
+	var sysId = gel('sys_uniqueValue').value;
+	
+	var wtype =  gel('pa_widgets.type').value;
+	var wwidth = (wtype == 'score') ? 350 : '85%';
+	var wheigth = (wtype == 'score') ? 350 : 600;
+	
+	var box = new GlideBox({
+		iframe : '$pa_widget.do?jvar_sys_id='+ sysId
+			+'&amp;jvar_display_mode=normal&amp;jvar_widget_type='
+		+ wtype ,
+		width : wwidth,
+		height : wheigth,
+		title : "Preview: " + gel('pa_widgets.name').value,
+		noTitle : true
+	});
+	box.render();
+}]]&gt;&lt;/script&gt;&lt;show_insert&gt;false&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Arnoud.Kooi_SHARE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-10-10 10:00:00&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;d9b7ca374fde220074570ab18110c7e2&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;Preview Widget&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_d9b7ca374fde220074570ab18110c7e2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Arnoud.Kooi_SHARE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-11-18 20:43:54&lt;/sys_updated_on&gt;&lt;table&gt;pa_widgets&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash/>
+<remote_update_set display_value="PA - UI Action Utils">bb76a76c1b37f050ba6a437cbc4bcb86</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>arnoud.kooi</sys_created_by>
+<sys_created_on>2021-11-10 15:31:23</sys_created_on>
+<sys_id>fb76a76c1b37f050ba6a437cbc4bcb8a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15c8cd77b180000000</sys_recorded_at>
+<sys_updated_by>arnoud.kooi</sys_updated_by>
+<sys_updated_on>2021-11-10 15:31:23</sys_updated_on>
+<table>pa_widgets</table>
+<target_name>Preview Widget</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_processor_0219325f4f244b009881c5c18110c7a2</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_processor"&gt;&lt;sys_processor action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;description/&gt;&lt;interactive&gt;false&lt;/interactive&gt;&lt;name&gt;pa_bd_exclusion_json&lt;/name&gt;&lt;parameters/&gt;&lt;params_endpoint/&gt;&lt;path&gt;pa_bd_exclusion_json&lt;/path&gt;&lt;path_endpoint/&gt;&lt;require_csrf&gt;false&lt;/require_csrf&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function process(g_request, g_response, g_processor) {
+	//created by Arnoud
+	var action = g_request.getParameter("action");
+	var indicator = g_request.getParameter("indicator");
+	var bd1 = g_request.getParameter("bd1");
+	var bd2 = g_request.getParameter("bd2");
+
+	if (action == "getjson")
+		if (indicator)
+			g_processor.writeOutput("application/json", getBreakdowns(indicator));
+	if (action == "toggleexclusion")
+		g_processor.writeOutput(toggleExclusion(indicator, bd1, bd2));
+
+})(g_request, g_response, g_processor);
+
+
+function getBreakdowns(indicator) {
+
+	var gr = new GlideRecord('pa_indicator_breakdowns');
+	gr.addQuery("indicator", indicator);
+	gr.orderBy('breakdown.name');
+	gr.query();
+	var bd = {};
+	bd.order = [];
+	while (gr.next()) {
+		var bd_sys_id = gr.getValue('breakdown');
+		bd[bd_sys_id] = {};
+		bd.order.push(bd_sys_id);
+		bd[bd_sys_id]['name'] = gr.getDisplayValue('breakdown');
+		bd[bd_sys_id]['count'] = getBreakDownCount(gr.breakdown.dimension.facts_table, gr.breakdown.dimension.conditions);
+		bd[bd_sys_id]['exclusions'] = [];
+	}
+	var gr2 = new GlideRecord('pa_indicator_breakdown_excl');
+	gr2.addQuery("indicator", indicator);
+	gr2.query();
+	while (gr2.next()) {
+		bd[gr2.getValue('breakdown')]['exclusions'].push(gr2.getValue('breakdown_level2'));
+		bd[gr2.getValue('breakdown_level2')]['exclusions'].push(gr2.getValue('breakdown'));
+	}
+	return JSON.stringify(bd);
+}
+
+function getBreakDownCount(table,conditions){
+	var rtrn = 0;
+	var count = new GlideAggregate(table);
+	count.addEncodedQuery(conditions);
+	count.addAggregate('COUNT');
+	count.query();
+	if (count.next()) {
+    	rtrn = count.getAggregate('COUNT');
+	}
+	return parseInt(rtrn) || 0;
+}
+
+
+function toggleExclusion(indicator, bd1, bd2) {
+
+	var add = true;
+	var query = "indicator=" + indicator +
+		"^breakdown=" + bd1 + "^ORbreakdown=" + bd2 +
+		"^breakdown_level2=" + bd1 + "^ORbreakdown_level2=" + bd2;
+
+	var gr = new GlideRecord('pa_indicator_breakdown_excl');
+	gr.addEncodedQuery(query);
+	gr.query();
+	while (gr.next()) {
+		gr.deleteRecord();
+		add = false;
+	}
+
+	if (add) {
+		gr.initialize();
+		gr.setValue("indicator", indicator);
+		gr.setValue("breakdown", bd1);
+		gr.setValue("breakdown_level2", bd2);
+		gr.insert();
+	}
+	return '' + add;
+
+}
+
+
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_processor&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-08-18 14:34:11&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;0219325f4f244b009881c5c18110c7a2&lt;/sys_id&gt;&lt;sys_mod_count&gt;15&lt;/sys_mod_count&gt;&lt;sys_name&gt;pa_bd_exclusion_json&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_processor_0219325f4f244b009881c5c18110c7a2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Arnoud.Kooi&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-08-20 12:56:35&lt;/sys_updated_on&gt;&lt;type&gt;script&lt;/type&gt;&lt;/sys_processor&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-798374831</payload_hash>
+<remote_update_set display_value="PA - UI Action Utils">bb76a76c1b37f050ba6a437cbc4bcb86</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>arnoud.kooi</sys_created_by>
+<sys_created_on>2021-11-10 15:31:23</sys_created_on>
+<sys_id>ff76a76c1b37f050ba6a437cbc4bcb86</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15e05a7a6660000001</sys_recorded_at>
+<sys_updated_by>arnoud.kooi</sys_updated_by>
+<sys_updated_on>2021-11-10 15:31:23</sys_updated_on>
+<table/>
+<target_name>pa_bd_exclusion_json</target_name>
+<type>Processor</type>
+<update_domain>global</update_domain>
+<update_guid>48027e548630cb00993f5e5eee8659c7</update_guid>
+<update_guid_history>48027e548630cb00993f5e5eee8659c7:-798374831,37e5bcccfd748b00610c71e0768674b3:-798374831,7fb274cc21748b002229b492d96422d6:-1879678046,a49d04e717e44b00b08f492af4038af4:-851744787,dc0b08275ce44b00e8a1e27562468f5f:428993141,70d59bdbd4644b00044a1becdd68cb91:1409691177,1824cbd3b6644b00c61454b907c120d8:1173341355,0dc3c7d3f1644b0046aa3c14a32bbc6f:-1132658533,8863c7d3b0644b00c71d95d249e0024e:848841497,fb13c3d3b0644b004bf54a0d1344f265:1119214185,8af2c3d39b644b004b9fd4225b83453a:-1169007888,bec28f9313644b00bd3e57c4b39becbb:1971753743,8aa28f9372644b0058ee10d5175d7bb7:1893315489,04824f934a644b00e927c8c545d4a4c2:-1133808351,7b324b936d644b008f96f1efc423e38d:-1169007888,406ff2530a644b00548b89c7d5677ebf:1927190256,0219325fe7244b00c584a73daaa422a3:789060927</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_5a2694b34f5e220074570ab18110c780</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;Set Conditions from Clipboard&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;true&lt;/client&gt;&lt;comments&gt;Show a Prompt in witch you can paste your query prepared in a List, so you don't have to replicate it manually. The (exact) condition of the indicator source will be omitted.&amp;#13;
+&amp;#13;
+Part of PA - UI Action Utils by Arnoud Kooi&lt;/comments&gt;&lt;condition&gt;current.type != 2&lt;/condition&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;false&lt;/form_button&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;true&lt;/form_link&gt;&lt;hint&gt;Show a Prompt in witch you can paste your query prepared in a List, so you don't have to replicate it manually.&lt;/hint&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;name&gt;Set Conditions from Clipboard&lt;/name&gt;&lt;onclick&gt;setconditions();&lt;/onclick&gt;&lt;order&gt;40&lt;/order&gt;&lt;script&gt;&lt;![CDATA[function setconditions(){ 
+	
+	var src_cond = g_scratchpad.cube_conditions.replace('^EQ','');
+	var conditionsOld = g_form.getValue('conditions');
+	var conditionsNew = prompt("Paste query", conditionsOld);
+	if (conditionsNew !== null) {
+		var ind_cond = conditionsNew;
+		for (var i = 0; i &lt;10;i++){
+			ind_cond = ind_cond.replace(src_cond,'').replace('^NQ^','^NQ');
+		}
+		g_form.setValue('conditions',ind_cond);
+	}
+}
+]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Arnoud.Kooi_SHARE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-10-10 10:00:00&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;5a2694b34f5e220074570ab18110c780&lt;/sys_id&gt;&lt;sys_mod_count&gt;9&lt;/sys_mod_count&gt;&lt;sys_name&gt;Set Conditions from Clipboard&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_5a2694b34f5e220074570ab18110c780&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Arnoud.Kooi_SHARE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-11-18 21:05:32&lt;/sys_updated_on&gt;&lt;table&gt;pa_indicators&lt;/table&gt;&lt;ui11_compatible&gt;false&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash/>
+<remote_update_set display_value="PA - UI Action Utils">bb76a76c1b37f050ba6a437cbc4bcb86</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>arnoud.kooi</sys_created_by>
+<sys_created_on>2021-11-10 15:31:23</sys_created_on>
+<sys_id>ff76a76c1b37f050ba6a437cbc4bcb89</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15c8cd77b180000000</sys_recorded_at>
+<sys_updated_by>arnoud.kooi</sys_updated_by>
+<sys_updated_on>2021-11-10 15:31:23</sys_updated_on>
+<table>pa_indicators</table>
+<target_name>Set Conditions from Clipboard</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
