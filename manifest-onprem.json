@@ -1,0 +1,120 @@
+{
+    "name": "SN Utils OnPrem",
+    "short_name": "SN Utils Onprem",
+    "description": "ServiceNow Productivity tools. (Personal work, not affiliated to ServiceNow)",
+    "author": "Arnoud Kooi / arnoudkooi.com",
+    "version": "0.0.0.0",
+    "manifest_version": 3,
+    "permissions": [
+      "activeTab",
+      "declarativeContent",
+      "storage",
+      "contextMenus",
+      "cookies"
+    ],
+    "icons": {
+      "16": "images/icon16.png",
+      "32": "images/icon32.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": [
+          "<all_urls>"
+        ],
+        "exclude_matches": [
+          "*://*/*?XML*",
+          "*://*/*&XML*",
+          "*://*/*?WSDL*",
+          "*://*/*&WSDL*"
+        ],
+        "js": [
+          "js/purify.min.js",
+          "content_script_all_frames.js"
+        ],
+        "all_frames": true
+      },
+      {
+        "matches": [
+          "<all_urls>"
+        ],
+        "exclude_matches": [
+          "*://*/*?XML*",
+          "*://*/*&XML*",
+          "*://*/*?WSDL*",
+          "*://*/*&WSDL*"
+        ],
+        "js": [
+          "js/Tinycon.js",
+          "content_script_parent.js"
+        ],
+        "all_frames": false
+      }
+    ],
+    "commands": {
+      "_execute_page_action": {
+        "suggested_key": {
+          "default": "Ctrl+1",
+          "mac": "Command+1"
+        },
+        "description": "Activate Extension"
+      },
+      "pop": {
+        "suggested_key": {
+          "default": "Ctrl+2",
+          "mac": "Command+2"
+        },
+        "description": "Pop-In / Pop-Out"
+      },
+      "show-technical-names": {
+        "suggested_key": {
+          "default": "Ctrl+3",
+          "mac": "Command+3"
+        },
+        "description": "Show Technical Names"
+      },
+      "slashcommand-shortcut": {
+        "suggested_key": {
+          "default": "Ctrl+4",
+          "mac": "Command+4"
+        },
+        "description": "Run /shortcut slashcommand"
+      },
+      "slashcommand": {
+        "description": "Open slashcommand popup"
+      }
+    },
+    "web_accessible_resources": [
+      {
+        "resources": [
+          "js/purify.min.js",
+          "inject.js",
+          "inject_next.js",
+          "inject_parent.js",
+          "css/*",
+          "js/*"
+        ],
+        "matches": [
+          "<all_urls>"
+        ]
+      }
+    ],
+    "incognito": "split",
+    "action": {
+      "default_title": "SN Utils",
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/icon16.png",
+        "32": "images/icon32.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+      }
+    },
+    "host_permissions": [
+      "*://*/*"
+    ]
+  }
