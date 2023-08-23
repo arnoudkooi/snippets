@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2023-08-23 19:42:07">
+<content_block_programmatic action="INSERT_OR_UPDATE">
+<active>true</active>
+<category>general</category>
+<condition/>
+<conditional>false</conditional>
+<frame display_value=""/>
+<logged_on>false</logged_on>
+<name>OR Conditions</name>
+<programmatic_content><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<!-- 
+Workaround to allow OR conditions in interactive filters
+-->
+	<div id='add_or'>Not Active</div>
+
+	<script>
+var dbhListen = new DashboardMessageHandler('dbhListen', function() {
+	var table = 'incident';
+	var baseQuery = 'assigned_to';
+	var orQuery = ['^ORcaller_idIN'];
+	var newQuery = '';
+	var found = false;
+	var addstring = '';
+	var fltrss = dbhListen.getCurrentFilters();
+	for (var i = 0; i &lt; fltrss.length;  i++){
+		var fltrs = fltrss[i];
+		for (var j = 0; j &lt; fltrs.length;  j++){
+		var fltr = fltrs[j];
+			if (fltr['table'] == 'global' &amp;&amp; fltr['filter'].startsWith(baseQuery)){
+				if (fltr['id'] != 'dbhListen'){
+					var sys_id = fltr.filter.replace("assigned_toIN","");
+					var newQuery = fltr.filter.replace('task','incident');
+					for (var k = 0; k &lt; orQuery.length; k++){
+						newQuery += orQuery[k] + sys_id;
+					}
+				}
+			}
+		}
+	}
+
+		var filter_message = {};
+		filter_message.id = "dbhListen";
+		filter_message.table = "incident";
+		filter_message.filter = newQuery;        
+		SNC.canvas.interactiveFilters.setDefaultValue({
+				id: filter_message.id,
+				filters: [filter_message]
+			}, false);
+
+		dbhListen.publishFilter('incident', newQuery);
+		$j('#add_or').text('Hack applied ;)');
+
+});
+
+//
+//function clearFilter() {
+SNC.canvas.interactiveFilters.removeDefaultValue(dbhListen, false);
+//dbhListen.removeFilter();
+//}
+
+
+	</script>
+
+	<style>
+		#add_or {
+			font-size: 11pt;
+			text-align: center;
+			vertical-align: middle;
+		}
+	</style>
+
+</j:jelly>]]></programmatic_content>
+<sys_class_name>content_block_programmatic</sys_class_name>
+<sys_created_by>Arnoud.Kooi</sys_created_by>
+<sys_created_on>2018-04-24 14:36:06</sys_created_on>
+<sys_id>8e6d09ab4fa1d70035e0fdb28110c71f</sys_id>
+<sys_mod_count>43</sys_mod_count>
+<sys_name>OR Conditions</sys_name>
+<sys_package display_value="Global" source="global">global</sys_package>
+<sys_policy/>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>content_block_programmatic_8e6d09ab4fa1d70035e0fdb28110c71f</sys_update_name>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2023-06-22 18:20:13</sys_updated_on>
+<two_phase>false</two_phase>
+</content_block_programmatic>
+</unload>
